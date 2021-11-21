@@ -1,0 +1,645 @@
+$# Creating journal file 
+$# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_asc.db.jou at 
+$# 20-Nov-21 16:43:02
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
+"/template.db","C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento" // @
+"_asc.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamen" // @
+"to_asc" )
+db_set_pref( 303, 3, 0, FALSE, 0.40000001, "" )
+STRING asm_create_patch_xy_created_ids[VIRTUAL]
+asm_const_patch_xyz( "1", "<209.6 0 157.2>", "[0 0 0]", "Coord 0",   @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 1
+asm_const_patch_xyz( "2", "<209.6 0 157.2>", "[209.6 0 0]", "Coord 0",   @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 2
+asm_const_patch_xyz( "3", "<209.6 0 157.2>", "[419.2 0 0]", "Coord 0",   @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 3
+asm_const_patch_xyz( "4", "<209.6 0 125.76>", "[0 -314.4 15.72]", "Coord 0",   @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 4
+asm_const_patch_xyz( "5", "<209.6 0 125.76>", "[209.6 -314.4 15.72]",   @
+"Coord 0", asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 5
+asm_const_patch_xyz( "6", "<209.6 0 125.76>", "[419.2 -314.4 15.72]",   @
+"Coord 0", asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 6
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "7", "Surface 1.1", "Surface 4.1",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 7
+sgm_const_surface_2curve( "8", "Surface 1.4", "Surface 4.4",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 8
+sgm_const_surface_2curve( "9", "Surface 1.3", "Surface 4.3",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 9
+sgm_const_surface_2curve( "10", "Surface 2.1", "Surface 5.1",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 10
+sgm_const_surface_2curve( "11", "Surface 2.3", "Surface 5.3",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 11
+sgm_const_surface_2curve( "12", "Surface 3.1", "Surface 6.1",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 12
+sgm_const_surface_2curve( "13", "Surface 3.2", "Surface 6.2",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 13
+sgm_const_surface_2curve( "14", "Surface 3.3", "Surface 6.3",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 14
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_create( "Surface 1.4 1.2 2.2 3.2 4.4 4.2 5.2 6.2 ", 1, 22, 0., 0.,  @
+0. )
+mesh_seed_create( "Surface 7.3 7.1 8.3 9.3 10.3 11.3 12.3 13.3 1.3 1.1 4.3" // @
+" 4.1 2.3 2.1 5.35.1 3.3 3.1 6.3 6.1", 1, 28, 0., 0., 0. )
+ga_view_aa_set( -64.534210, 0.959981, 45.872231 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1:14", 1, ["50.3291"],   @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,   @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,   @
+fem_create_mesh_s_elems_created )
+$# 667 nodes and 616 elements created for Surface 1.
+$# 667 nodes and 616 elements created for Surface 2.
+$# 667 nodes and 616 elements created for Surface 3.
+$# 667 nodes and 616 elements created for Surface 4.
+$# 667 nodes and 616 elements created for Surface 5.
+$# 667 nodes and 616 elements created for Surface 6.
+$# 841 nodes and 784 elements created for Surface 7.
+$# 667 nodes and 616 elements created for Surface 8.
+$# 841 nodes and 784 elements created for Surface 9.
+$# 841 nodes and 784 elements created for Surface 10.
+$# 841 nodes and 784 elements created for Surface 11.
+$# 841 nodes and 784 elements created for Surface 12.
+$# 667 nodes and 616 elements created for Surface 13.
+$# 841 nodes and 784 elements created for Surface 14.
+$# === 10382 nodes created.  IDs  = 1:10382.
+$# === 9632 elements created.  IDs  = 1:9632.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.40000001, FALSE,   @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 748 nodes deleted.
+ga_view_center_set( -262.902466, 76.842712 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -192.075867, 65.952354 )
+ga_view_zoom_set( 262.622253 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadsbcs_create2( "F1", "Force", "Nodal", "", "Static", ["Point 9 12"],   @
+"Geometry", "Coord 0", "1.", ["<0 0 47658.63>", "<     >", "<     >",  @
+"<     >"],  ["", "", "", ""] )
+$# Load/BC set "F1" created.
+loadsbcs_create2( "F2", "Force", "Nodal", "", "Static", ["Point 15 16"],   @
+"Geometry", "Coord 0", "1.", ["<0 0 15886.2>", "<     >", "<     >", "<     >" @
+],  ["", "", "", ""] )
+$# Load/BC set "F2" created.
+loadsbcs_create2( "F3", "Force", "Nodal", "", "Static", ["Point 9 15"],   @
+"Geometry", "Coord 0", "1.", ["<0 -6354.48 0>", "<     >", "<     >",  @
+"<     >"] , ["", "", "", ""] )
+$# Load/BC set "F3" created.
+loadsbcs_create2( "F4", "Force", "Nodal", "", "Static", ["Point 12 16"],   @
+"Geometry", "Coord 0", "1.", ["<0 9531.72 0>", "<     >", "<     >", "<     >" @
+],  ["", "", "", ""] )
+$# Load/BC set "F4" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al7475", 0,   @
+"Date: 14-Jul-21           Time: 15:08:11", "Isotropic", 1, "Directionality",  @
+ 1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,   @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",   @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",   @
+"Poisson Ratio"], [2, 5, 0], "Property Values", ["68947.57", "0.33", ""] )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al2024", 0,   @
+"Date: 14-Jul-21           Time: 15:08:11", "Isotropic", 1, "Directionality",  @
+ 1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,   @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",   @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",   @
+"Poisson Ratio"], [2, 5, 0], "Property Values", ["72394.95", "0.33", ""] )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Ply", 0,   @
+"Date: 11-Nov-21           Time: 14:03:05", "2d Orthotropic", 5,   @
+"Directionality", 4, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,   @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",   @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus 11" @
+ , "Elastic Modulus 22", "Poisson Ratio 12", "Shear Modulus 12",   @
+"Shear Modulus 23", "Shear Modulus 13"], [2, 3, 5, 8, 9, 10, 0],   @
+"Property Values", ["100000", "10000", "0.34", "5400", "3050", "5400", ""] )
+mat_create_lam3( "Laminado", "", 1, ["Ply", "Ply", "Ply", "Ply", "Ply", "Ply", @
+  "Ply", "Ply"], [" 1.000000E-01", " 1.000000E-01", " 1.000000E-01",   @
+" 1.000000E-01", " 1.000000E-01", " 1.000000E-01", " 1.000000E-01",   @
+" 1.000000E-01"], [" 0.000000E+00", " 4.500000E+01", "-4.500000E+01",   @
+" 9.000000E+01", " 9.000000E+01", "-4.500000E+01", " 4.500000E+01",   @
+" 0.000000E+00"], ["", "", "", "", "", "", "", ""], 8, "", "Create" )
+beam_section_create( "Sec1_chapeu", "HAT", ["15.72", "1.048", "15.72", "5.24"] )
+$# Beam Section "Sec1_chapeu" created.
+beam_section_create( "Sec2_t", "T", ["15.72", "10.48", "1.048", "1.048"] )
+$# Beam Section "Sec2_t" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+elementprops_create( "NERVURAS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,   @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,   @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+ 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, @
+  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",   @
+"<0 0 1>", "<0 0 -3.28>", "<0 0 -3.28>", "", "", "", "", "", "", "", "", "",   @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "Analysis" @
+ , "Analysis", "Analysis"], "Surface 8:13:5.3" )
+$# Property Set "NERVURAS_SUPERIORES" created.
+uil_toolbar.shaded_smooth(  )
+elementprops_delete( ["NERVURAS_SUPERIORES"] )
+$# 1 Property Sets deleted.
+sandia_utils.delete_n_metadata( 1, ["NERVURAS_SUPERIORES"] )
+elementprops_create( "LONGARINAS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6, @
+  4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048, @
+  4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
+4410,  4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, @
+ 1, 1,  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t",  @
+"m:Al7475",  "< 0 0 1>", "<0 0 -3.28>", "<0 0 -3.28>", "", "", "", "", "", "", @
+ "", "", "",  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "" ], "Surface 8:13:5.3" )
+$# Property Set "LONGARINAS_SUPERIORES" created.
+elementprops_create( "LONGARINAS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6, @
+  4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048, @
+  4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
+4410,  4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, @
+ 1, 1,  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t",  @
+"m:Al7475",  "< 0 0 -1>", "<0 0 3.28>", "<0 0 3.28>", "", "", "", "", "", "",  @
+"", "", "",  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "" ], "Surface 7.1 12.3" )
+$# Property Set "LONGARINAS_INFERIORES" created.
+elementprops_create( "NERVURAS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,   @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,   @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+ 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, @
+  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",   @
+"< 0 0 1>", "<0 0 -3.28>", "<0 0 -3.28>", "", "", "", "", "", "", "", "", "",  @
+ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"" ], "Surface 1:6.3" )
+$# Property Set "NERVURAS_SUPERIORES" created.
+elementprops_create( "NERVURAS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,   @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,   @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+ 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, @
+  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",   @
+"< 0 0 -1>", "<0 0 3.28>", "<0 0 3.28>", "", "", "", "", "", "", "", "", "",   @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+ ], "Surface 1:6.1" )
+$# Property Set "NERVURAS_INFERIORES" created.
+elementprops_create( "STRINGERS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+ 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+ 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, @
+  4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1,  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec1_chapeu",  @
+"m:Al7475" , "< 0 0 1>", "<0 0 9.06>", "<0 0 9.06>", "", "", "", "", "", "",  @
+"", "", "",  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "" ], "" )
+$# Property Set "STRINGERS_INFERIORES" created.
+elementprops_create( "STRINGERS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+ 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+ 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, @
+  4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1,  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec1_chapeu",  @
+"m:Al7475" , "< 0 0 -1>", "<0 0 -9.06>", "<0 0 -9.06>", "", "", "", "", "", "" @
+, "", "",  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", @
+ "", "", "" , ""], "Surface 9:11:2.3" )
+$# Property Set "STRINGERS_SUPERIORES" created.
+elementprops_delete( ["STRINGERS_SUPERIORES"] )
+$# 1 Property Sets deleted.
+elementprops_create( "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037,  @
+ 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409] @
+,  [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al2024", "",  @
+"1.572" , "", "", "", "", "", "", "", "", "", "", "", "", "", ""],  @
+"Surface 9:11:2.3" )
+$# Critical Decision requested from application ELEM_PROPS
+$#     The Application Region list contains entities other than elements and 
+$# Surfaces.  Ignore and continue?
+$? YES 29002018 
+$# Property Set "REVESTIMENTO" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+elementprops_modify( "REVESTIMENTO", "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [  @
+13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406,  @
+ 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], [  @
+"m:Al2024", "", "1.572", "", "", "", "", "", "", "", "", "", "", "", "", "",   @
+""], "Surface 1:14" )
+$# Property Set "REVESTIMENTO" modified.
+elementprops_modify( "STRINGERS_INFERIORES", "STRINGERS_INFERIORES", 11, 2,   @
+42, 1, 1, 20, [39, 13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, @
+  4045, 4037, 4047, 4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061,  @
+4303,  8111, 4403, 4404, 4410, 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, @
+ 1, 1,  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4,  @
+4, 4], [ "Sec1_chapeu", "m:Al7475", "<0. 0. 1.>", "<0. 0. 9.0600004>",   @
+"<0. 0. 9.0600004>", "", "", "", "", "", "", "", "", "", "", "", "", "", "",   @
+"", "", "", "", "", "", "", "", "", "", "", "", "Analysis", "Analysis",   @
+"Analysis"], "Surface 7:10:3.3" )
+$# Property Set "STRINGERS_INFERIORES" modified.
+ga_view_center_set( -312.081970, 28.314896 )
+ga_view_zoom_set( 332.381287 )
+ga_view_center_set( -412.034363, 38.329987 )
+ga_view_zoom_set( 373.928955 )
+ga_view_center_set( -308.313904, 25.141861 )
+ga_view_zoom_set( 332.381287 )
+ga_view_center_set( -217.175720, 7.777969 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -138.200989, -6.873062 )
+ga_view_zoom_set( 262.622253 )
+ga_view_center_set( -68.558350, -19.339035 )
+ga_view_zoom_set( 233.442001 )
+ga_view_center_set( -134.579590, -8.822968 )
+ga_view_zoom_set( 262.622253 )
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 7:10:3.3", 16384, 31.4793, "Bar2", "#", "#",  @
+ "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 29 nodes and 28 elements created for Surface 7.3.
+$# 29 nodes and 28 elements created for Surface 10.3.
+$# === 58 nodes created.  IDs  = 10353:10410.
+$# === 56 elements created.  IDs  = 9633:9688.
+fem_associate_elems_to_ep( "STRINGERS_INFERIORES",   @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 56 Element(s) associated to the Element Property STRINGERS_INFERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 9:11:2.3", 16384, 31.4793, "Bar2", "#", "#",  @
+ "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 29 nodes and 28 elements created for Surface 9.3.
+$# 29 nodes and 28 elements created for Surface 11.3.
+$# === 58 nodes created.  IDs  = 10411:10468.
+$# === 56 elements created.  IDs  = 9689:9744.
+fem_create_mesh_curv_1( "Surface 1:6.3", 16384, 20.959999, "Bar2", "#", "#",   @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 29 nodes and 28 elements created for Surface 1.3.
+$# 29 nodes and 28 elements created for Surface 2.3.
+$# 29 nodes and 28 elements created for Surface 3.3.
+$# 29 nodes and 28 elements created for Surface 4.3.
+$# 29 nodes and 28 elements created for Surface 5.3.
+$# 29 nodes and 28 elements created for Surface 6.3.
+$# === 174 nodes created.  IDs  = 10469:10642.
+$# === 168 elements created.  IDs  = 9745:9912.
+fem_associate_elems_to_ep( "NERVURAS_SUPERIORES",   @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 168 Element(s) associated to the Element Property NERVURAS_SUPERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 1:6.1", 16384, 20.959999, "Bar2", "#", "#",   @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 29 nodes and 28 elements created for Surface 1.1.
+$# 29 nodes and 28 elements created for Surface 2.1.
+$# 29 nodes and 28 elements created for Surface 3.1.
+$# 29 nodes and 28 elements created for Surface 4.1.
+$# 29 nodes and 28 elements created for Surface 5.1.
+$# 29 nodes and 28 elements created for Surface 6.1.
+$# === 174 nodes created.  IDs  = 10643:10816.
+$# === 168 elements created.  IDs  = 9913:10080.
+fem_associate_elems_to_ep( "NERVURAS_INFERIORES",   @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 168 Element(s) associated to the Element Property NERVURAS_INFERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 8:13:5.3", 16384, 31.4793, "Bar2", "#", "#",  @
+ "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 29 nodes and 28 elements created for Surface 8.3.
+$# 29 nodes and 28 elements created for Surface 13.3.
+$# === 58 nodes created.  IDs  = 10817:10874.
+$# === 56 elements created.  IDs  = 10081:10136.
+fem_associate_elems_to_ep( "LONGARINAS_SUPERIORES",   @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 56 Element(s) associated to the Element Property LONGARINAS_SUPERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 7.1 12.3", 16384, 31.4793, "Bar2", "#", "#",  @
+ "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 29 nodes and 28 elements created for Surface 7.1.
+$# 29 nodes and 28 elements created for Surface 12.3.
+$# === 58 nodes created.  IDs  = 10875:10932.
+$# === 56 elements created.  IDs  = 10137:10192.
+fem_associate_elems_to_ep( "LONGARINAS_INFERIORES",   @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 56 Element(s) associated to the Element Property LONGARINAS_INFERIORES.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.40000001, FALSE,   @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 580 nodes deleted.
+elementprops_modify( "REVESTIMENTO", "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [  @
+13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406,  @
+ 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], [  @
+"m:Al2024", "", "1.572", "", "", "", "", "", "", "", "", "", "", "", "", "",   @
+""], "Surface 1:8 10 12 13" )
+$# Property Set "REVESTIMENTO" modified.
+elementprops_create( "COMPOSITO", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,   @
+4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Laminado", "", "" @
+ , "", "", "", "", "", ""], "Surface 9 11 14" )
+$# Property Set "COMPOSITO" created.
+uil_primary_file.db_save(  )
+$# Reclaimed 1.34 MB of 4.58 MB.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+sys_poll_option( 2 )
+pref_fa_set( [FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE], [6, 3, 1, 1, 5, 7, 2, 2, 8, 11, 2, 3, 3, 5, 2, 1, @
+  3, 6, 5, 5, 3, 2, 2, 2, 2, 2, 6, 6, 6, 9, 9, 3, 5, 5, 5, 1, 3, 3, 15, 13], [ @
+ TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, @
+  TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE,  TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, @
+ TRUE,  TRUE], [3, 4, 5, 6, 1, 1, 7, 8, 9, 10], [TRUE, TRUE, TRUE, TRUE, TRUE, @
+ TRUE,  TRUE, TRUE, TRUE, TRUE], FALSE )
+display_fa_vectors( TRUE )
+result_label_format_set( 1, 4 )
+gm_elem_prop_init_list(  )
+ga_display_offsets_set( "general", 1 )
+ga_display_beam_set( "general", 6 )
+ga_display_pin_dof_set( "general", 1 )
+ga_display_spring_dof_set( "general", 1 )
+sys_poll_option( 0 )
+loadsbcs_create2( "ENGASTE", "Displacement", "Nodal", "", "Static", [ @
+"Node 1:23 1979:2001"], "FEM", "Coord 0", "1.", ["<0., 0., 0.>",  @
+"<0., 0., 0.>", "", ""], ["", "", "", ""] )
+$# Load/BC set "ENGASTE" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+mscnastran_subcase.create( "101", "Default", "This is a default subcase." )
+mscnastran_subcase.create_char_param( "LOAD CASE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE",   @
+"This is a default subcase." )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL",   @
+"This load case is the default load case that always appears" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE FLAG", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "Default", "STRUCTURAL" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS", "1" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS 1",   @
+"DISPLACEMENT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES 1",   @
+"STRESS(SORT1,REAL,VONMISES,BILIN)=0;PARAM,NOCOMPS,1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",   @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "APPLIED LOADS", "1" )
+mscnastran_subcase.create_char_param( "APPLIED LOADS 1", "OLOAD(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRAINS", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRAINS 1",   @
+"STRAIN(SORT1,REAL,VONMISES,STRCUR,BILIN)=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE DIRECT TEXT POS", "OFF" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE CODE SOL 101",   @
+"LCNTSTAT" )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE SOL 101",   @
+"Linear Contact (LCNT)" )
+mscnastran_subcase.create_char_param( "ANALYSIS PREFERENCE CTRLDEF SOL 101",   @
+"Default (Blank)" )
+mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
+mscnastran_subcase.create_char_param( "ROTOR DYNAMICS", "" )
+mscnastran_subcase.create_char_param( "ALL EXPLICIT MPCS", "ON" )
+uil_primary_file.db_save(  )
+$
+$# Session file stopped playing (level 1)
+ga_view_center_set( -131.933105, -19.339005 )
+ga_view_zoom_set( 233.442001 )
+ga_view_center_set( -129.456909, -28.686584 )
+ga_view_zoom_set( 207.503998 )
+ga_view_center_set( -127.255875, -37.105606 )
+ga_view_zoom_set( 184.447998 )
+ga_view_center_set( -125.299408, -44.589172 )
+ga_view_zoom_set( 163.953781 )
+ga_view_center_set( -123.560257, -51.241226 )
+ga_view_zoom_set( 145.736694 )
+ga_view_center_set( -122.014450, -57.154182 )
+ga_view_zoom_set( 129.543732 )
+ga_view_center_set( -120.640366, -62.410126 )
+ga_view_zoom_set( 115.149986 )
+ga_view_center_set( -118.441772, -70.599792 )
+ga_view_zoom_set( 92.119987 )
+ga_view_center_set( -115.203903, -75.216789 )
+ga_view_zoom_set( 66.996353 )
+ga_view_center_set( -112.325790, -79.320770 )
+ga_view_zoom_set( 44.664234 )
+ga_view_center_set( -111.686234, -80.232773 )
+ga_view_zoom_set( 39.701542 )
+ga_view_center_set( -111.117737, -81.043434 )
+ga_view_zoom_set( 35.290260 )
+ga_view_center_set( -110.443932, -81.876343 )
+ga_view_zoom_set( 31.369120 )
+ga_view_center_set( -109.365822, -83.208969 )
+ga_view_zoom_set( 25.095295 )
+ga_view_center_set( -108.503372, -84.299034 )
+ga_view_zoom_set( 20.076237 )
+ga_view_center_set( -107.813416, -85.171097 )
+ga_view_zoom_set( 16.060989 )
+ga_view_center_set( -107.506775, -85.558678 )
+ga_view_zoom_set( 14.276435 )
+ga_view_center_set( -107.016129, -86.178795 )
+ga_view_zoom_set( 11.421148 )
+ga_view_center_set( -107.465919, -85.354248 )
+ga_view_zoom_set( 14.276436 )
+ga_view_center_set( -108.028145, -84.323547 )
+ga_view_zoom_set( 17.845545 )
+ga_view_center_set( -109.433678, -81.746803 )
+ga_view_zoom_set( 26.768318 )
+ga_view_center_set( -110.487831, -79.814255 )
+ga_view_zoom_set( 33.460396 )
+ga_view_center_set( -111.146667, -78.606407 )
+ga_view_zoom_set( 37.642944 )
+ga_view_center_set( -111.910324, -77.180206 )
+ga_view_zoom_set( 42.348312 )
+ga_view_center_set( -112.769394, -75.575729 )
+ga_view_zoom_set( 47.641853 )
+ga_view_center_set( -115.668884, -70.160591 )
+ga_view_zoom_set( 65.507545 )
+ga_view_center_set( -118.326721, -65.196732 )
+ga_view_zoom_set( 81.884430 )
+ga_view_center_set( -119.987869, -62.094307 )
+ga_view_zoom_set( 92.119980 )
+ga_view_center_set( -121.856705, -58.604103 )
+ga_view_zoom_set( 103.634979 )
+ga_view_center_set( -123.959045, -54.615776 )
+ga_view_zoom_set( 116.589355 )
+ga_view_center_set( -135.784943, -32.181358 )
+ga_view_zoom_set( 189.457703 )
+ga_view_center_set( -143.471771, -17.599030 )
+ga_view_zoom_set( 236.822128 )
+ga_view_center_set( -148.276031, -8.485046 )
+ga_view_zoom_set( 266.424896 )
+ga_view_center_set( -184.901581, -32.011818 )
+ga_view_zoom_set( 213.139923 )
+ga_view_center_set( -241.248505, -68.598160 )
+ga_view_zoom_set( 131.163025 )
+ga_view_center_set( -259.279510, -80.305794 )
+ga_view_zoom_set( 104.930420 )
+ga_view_center_set( -268.016724, -83.227486 )
+ga_view_zoom_set( 93.271484 )
+ga_view_center_set( -275.733704, -85.676132 )
+ga_view_zoom_set( 82.907990 )
+ga_view_center_set( -282.549255, -87.764763 )
+ga_view_zoom_set( 73.695992 )
+ga_view_center_set( -297.035858, -91.842110 )
+ga_view_zoom_set( 53.597084 )
+ga_view_center_set( -304.762024, -93.965530 )
+ga_view_zoom_set( 42.877666 )
+ga_view_center_set( -308.195862, -94.909271 )
+ga_view_zoom_set( 38.113480 )
+ga_view_center_set( -304.943970, -93.783607 )
+ga_view_zoom_set( 42.877663 )
+ga_view_center_set( -294.045471, -89.907745 )
+ga_view_zoom_set( 58.956787 )
+ga_view_center_set( -274.064880, -82.801971 )
+ga_view_zoom_set( 88.435181 )
+ga_view_center_set( -266.572144, -80.137314 )
+ga_view_zoom_set( 99.489578 )
+ga_view_center_set( -258.142883, -77.139572 )
+ga_view_zoom_set( 111.925774 )
+ga_view_center_set( -239.176941, -70.394646 )
+ga_view_zoom_set( 139.907211 )
+ga_view_center_set( -227.323303, -66.179070 )
+ga_view_zoom_set( 157.395615 )
+ga_view_center_set( -187.316925, -51.951469 )
+ga_view_zoom_set( 216.418976 )
+ga_view_center_set( -168.980682, -45.430489 )
+ga_view_zoom_set( 243.471344 )
+ga_view_center_set( -73.102875, -9.258446 )
+ga_view_zoom_set( 426.074860 )
+ga_view_center_set( -18.191132, 11.333443 )
+ga_view_zoom_set( 532.593567 )
+ga_view_center_set( 4.688751, 32.377327 )
+ga_view_zoom_set( 473.416504 )
+ga_view_center_set( 24.021973, 50.329689 )
+ga_view_zoom_set( 420.814667 )
+ga_view_center_set( 41.207245, 66.287422 )
+ga_view_zoom_set( 374.057495 )
+ga_view_center_set( 56.086273, 80.471992 )
+ga_view_zoom_set( 332.495544 )
+ga_view_center_set( 85.519684, 112.718819 )
+ga_view_zoom_set( 241.814941 )
+ga_view_center_set( 100.294037, 130.147949 )
+ga_view_zoom_set( 193.451950 )
+ga_view_center_set( 103.227203, 171.945343 )
+ga_view_zoom_set( 91.036209 )
+ga_view_center_set( 103.516907, 176.073471 )
+ga_view_zoom_set( 80.921074 )
+ga_view_center_set( 102.358154, 172.524734 )
+ga_view_zoom_set( 91.036209 )
+ga_view_center_set( 95.025177, 153.106201 )
+ga_view_zoom_set( 147.933838 )
+ga_view_center_set( 90.258759, 140.660690 )
+ga_view_zoom_set( 184.917297 )
+ga_view_center_set( 84.300842, 125.103806 )
+ga_view_zoom_set( 231.146622 )
+ga_view_center_set( 121.813782, 113.518852 )
+ga_view_zoom_set( 184.917297 )
+ga_view_center_set( 165.625854, 104.491669 )
+ga_view_zoom_set( 134.485306 )
+ga_view_center_set( 198.364532, 98.276543 )
+ga_view_zoom_set( 97.807495 )
+ga_view_center_set( 216.945648, 95.055199 )
+ga_view_zoom_set( 78.245995 )
+ga_view_center_set( 257.157959, 93.872444 )
+ga_view_zoom_set( 52.163998 )
+ga_view_center_set( 273.541565, 93.797714 )
+ga_view_zoom_set( 41.731197 )
+ga_view_center_set( 280.889618, 93.853020 )
+ga_view_zoom_set( 37.094398 )
+ga_view_center_set( 287.421173, 93.921867 )
+ga_view_zoom_set( 32.972797 )
+ga_view_center_set( 293.226990, 94.087959 )
+ga_view_zoom_set( 29.309153 )
+ga_view_center_set( 287.928253, 93.676987 )
+ga_view_zoom_set( 32.972797 )
+ga_view_center_set( 276.006073, 92.752296 )
+ga_view_zoom_set( 41.215996 )
+ga_view_center_set( 261.103424, 91.596466 )
+ga_view_zoom_set( 51.519997 )
+ga_view_center_set( 242.475067, 90.151688 )
+ga_view_zoom_set( 64.399994 )
+ga_view_center_set( 230.832306, 89.248703 )
+ga_view_zoom_set( 72.449997 )
+ga_view_center_set( 204.636200, 87.216988 )
+ga_view_zoom_set( 90.562500 )
+ga_view_center_set( 188.533813, 86.487511 )
+ga_view_zoom_set( 101.882813 )
+ga_view_center_set( 116.073090, 83.204903 )
+ga_view_zoom_set( 152.824219 )
+ga_view_center_set( 61.727417, 80.925285 )
+ga_view_zoom_set( 191.030273 )
+ga_view_center_set( 27.761414, 79.500519 )
+ga_view_zoom_set( 214.909058 )
+ga_view_center_set( -10.450317, 77.897667 )
+ga_view_zoom_set( 241.772690 )
+ga_view_center_set( -53.438538, 76.094467 )
+ga_view_zoom_set( 271.994263 )
+ga_view_center_set( -198.523865, 70.008644 )
+ga_view_zoom_set( 373.992126 )
+ga_view_center_set( -331.518494, 64.876297 )
+ga_view_zoom_set( 467.490173 )
+ga_view_center_set( -414.640320, 61.668510 )
+ga_view_zoom_set( 525.926453 )
+ga_view_center_set( -167.463440, 17.736702 )
+ga_view_zoom_set( 323.647034 )
+ga_view_center_set( -123.521057, 9.926575 )
+ga_view_zoom_set( 287.686249 )
+ga_view_center_set( -84.461121, 2.984238 )
+ga_view_zoom_set( 255.721115 )
+ga_view_center_set( -49.741028, -3.186703 )
+ga_view_zoom_set( 227.307663 )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 20-Nov-21 22:55:01

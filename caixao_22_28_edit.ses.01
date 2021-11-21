@@ -1,0 +1,496 @@
+$# Session file patran.ses.01 started recording at 14-Jul-21 14:39:03
+$# Build: 27.1.801631 Thu Mar 25 06:46:07 PDT 2021
+$# Recorded by: Patran 2021.1  (Student Edition)
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-SDHUBD7(
+$# 5cc9d3a28abf) (Windows 6.2 (Build 9200: Service Pack 0)) at 14-Jul-21 
+$# 14:39:03.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\exe\loads_browser.dll
+$#  shared library 'Loads Browser', Version 2021, Revision 3, Patch 0, has 
+$# been loaded for: MSC.Patran.
+uil_file_new.go( "C:\Program Files\MSC.Software\NaPa_SE\20211\Patran/templ" // @
+"ate.db", "C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO" )
+$# Copying C:\Program Files\MSC.Software\NaPa_SE\20211\Patran/template.db to 
+$# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\caixao_projeto_case22_28_edit.db
+$# Template copy complete.
+$# Database version 3.22 created by Patran 2021.1  (Student Edition) 
+$# successfully opened.
+$# Creating journal file 
+$# CC:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\caixao_projeto_case22_28_edit.db.jou at 14-Jul-21 15:00:17
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+db_set_pref( 303, 3, 0, FALSE, 0.40000001, "" )
+STRING asm_create_patch_xy_created_ids[VIRTUAL]
+asm_const_patch_xyz( "1", "<209.6 0 157.2>", "[0 0 0]", "Coord 0",  @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 1
+asm_const_patch_xyz( "2", "<209.6 0 157.2>", "[209.6 0 0]", "Coord 0",  @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 2
+asm_const_patch_xyz( "3", "<209.6 0 157.2>", "[419.2 0 0]", "Coord 0",  @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 3
+asm_const_patch_xyz( "4", "<209.6 0 125.76>", "[0 -314.4 15.72]", "Coord 0",  @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 4
+asm_const_patch_xyz( "5", "<209.6 0 125.76>", "[209.6 -314.4 15.72]",  @
+"Coord 0", asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 5
+asm_const_patch_xyz( "6", "<209.6 0 125.76>", "[419.2 -314.4 15.72]",  @
+"Coord 0", asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 6
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "7", "Surface 1.1", "Surface 4.1",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 7
+sgm_const_surface_2curve( "8", "Surface 1.4", "Surface 4.4",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 8
+sgm_const_surface_2curve( "9", "Surface 1.3", "Surface 4.3",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 9
+sgm_const_surface_2curve( "10", "Surface 2.1", "Surface 5.1",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 10
+sgm_const_surface_2curve( "11", "Surface 2.3", "Surface 5.3",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 11
+sgm_const_surface_2curve( "12", "Surface 3.1", "Surface 6.1",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 12
+sgm_const_surface_2curve( "13", "Surface 3.2", "Surface 6.2",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 13
+sgm_const_surface_2curve( "14", "Surface 3.3", "Surface 6.3",  @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 14
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_create( "Surface 1.4 1.2 2.2 3.2 4.4 4.2 5.2 6.2 ", 1, 22, 0., 0., 0. )
+mesh_seed_create( "Surface 7.3 7.1 8.3 9.3 10.3 11.3 12.3 13.3 1.3 1.1 4.3" // @
+" 4.1 2.3 2.1 5.35.1 3.3 3.1 6.3 6.1", 1, 28, 0., 0., 0. )
+ga_view_aa_set( -64.534210, 0.959981, 45.872231 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1:14", 1, ["50.3291"],  @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,  @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,  @
+fem_create_mesh_s_elems_created )
+$# 66 nodes and 50 elements created for Surface 1.
+$# 66 nodes and 50 elements created for Surface 2.
+$# 66 nodes and 50 elements created for Surface 3.
+$# 66 nodes and 50 elements created for Surface 4.
+$# 66 nodes and 50 elements created for Surface 5.
+$# 66 nodes and 50 elements created for Surface 6.
+$# 121 nodes and 100 elements created for Surface 7.
+$# 66 nodes and 50 elements created for Surface 8.
+$# 121 nodes and 100 elements created for Surface 9.
+$# 121 nodes and 100 elements created for Surface 10.
+$# 121 nodes and 100 elements created for Surface 11.
+$# 121 nodes and 100 elements created for Surface 12.
+$# 66 nodes and 50 elements created for Surface 13.
+$# 121 nodes and 100 elements created for Surface 14.
+$# === 1254 nodes created.  IDs  = 1:1254.
+$# === 1000 elements created.  IDs  = 1:1000.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.40000001, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 252 nodes deleted.
+ga_view_center_set( -262.902466, 76.842712 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -192.075867, 65.952354 )
+ga_view_zoom_set( 262.622253 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadsbcs_create2( "F1", "Force", "Nodal", "", "Static", ["Point 9 12"],  @
+"Geometry", "Coord 0", "1.", ["<0 0 95625>", "<     >", "<     >", "<     >"], @
+ ["", "", "", ""] )
+$# Load/BC set "F1" created.
+loadsbcs_create2( "F2", "Force", "Nodal", "", "Static", ["Point 15 16"],  @
+"Geometry", "Coord 0", "1.", ["<0 0 31875>", "<     >", "<     >", "<     >"], @
+ ["", "", "", ""] )
+$# Load/BC set "F2" created.
+loadsbcs_create2( "F3", "Force", "Nodal", "", "Static", ["Point 9 15"],  @
+"Geometry", "Coord 0", "1.", ["<0 -12750 0>", "<     >", "<     >", "<     >"] @
+, ["", "", "", ""] )
+$# Load/BC set "F3" created.
+loadsbcs_create2( "F4", "Force", "Nodal", "", "Static", ["Point 12 16"],  @
+"Geometry", "Coord 0", "1.", ["<0 19125 0>", "<     >", "<     >", "<     >"], @
+ ["", "", "", ""] )
+$# Load/BC set "F4" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al7475", 0,  @
+"Date: 14-Jul-21           Time: 15:08:11", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio"], [2, 5, 0], "Property Values", ["68947.57", "0.33", ""] )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al2024", 0,  @
+"Date: 14-Jul-21           Time: 15:08:11", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio"], [2, 5, 0], "Property Values", ["72394.95", "0.33", ""] )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Ply", 0,  @
+"Date: 11-Nov-21           Time: 14:03:05", "2d Orthotropic", 5,  @
+"Directionality", 4, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus 11" @
+, "Elastic Modulus 22", "Poisson Ratio 12", "Shear Modulus 12",  @
+"Shear Modulus 23", "Shear Modulus 13"], [2, 3, 5, 8, 9, 10, 0],  @
+"Property Values", ["100000", "10000", "0.34", "5400", "3050", "5400", ""] )
+mat_create_lam3( "Laminado", "", 1, ["Ply", "Ply", "Ply", "Ply", "Ply", "Ply", @
+ "Ply", "Ply"], [" 1.000000E-01", " 1.000000E-01", " 1.000000E-01",  @
+" 1.000000E-01", " 1.000000E-01", " 1.000000E-01", " 1.000000E-01",  @
+" 1.000000E-01"], [" 0.000000E+00", " 4.500000E+01", "-4.500000E+01",  @
+" 9.000000E+01", " 9.000000E+01", "-4.500000E+01", " 4.500000E+01",  @
+" 0.000000E+00"], ["", "", "", "", "", "", "", ""], 8, "", "Create" )
+beam_section_create( "Sec1_chapeu", "HAT", ["15.72", "1.048", "15.72", "5.24"] )
+$# Beam Section "Sec1_chapeu" created.
+beam_section_create( "Sec2_t", "T", ["15.72", "10.48", "1.048", "1.048"] )
+$# Beam Section "Sec2_t" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+elementprops_create( "NERVURAS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",  @
+"<0 0 1>", "<0 0 -3.28>", "<0 0 -3.28>", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "Analysis" @
+, "Analysis", "Analysis"], "Surface 8:13:5.3" )
+$# Property Set "NERVURAS_SUPERIORES" created.
+uil_toolbar.shaded_smooth(  )
+$# UNDO: Element Property Modify
+elementprops_delete( ["NERVURAS_SUPERIORES"] )
+$# 1 Property Sets deleted.
+sandia_utils.delete_n_metadata( 1, ["NERVURAS_SUPERIORES"] )
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+elementprops_create( "LONGARINAS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6, @
+ 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",  @
+"< 0 0 1>", "<0 0 -3.28>", "<0 0 -3.28>", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+], "Surface 8:13:5.3" )
+$# Property Set "LONGARINAS_SUPERIORES" created.
+elementprops_create( "LONGARINAS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6, @
+ 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",  @
+"< 0 0 -1>", "<0 0 3.28>", "<0 0 3.28>", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+], "Surface 7.1 12.3" )
+$# Property Set "LONGARINAS_INFERIORES" created.
+elementprops_create( "NERVURAS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",  @
+"< 0 0 1>", "<0 0 -3.28>", "<0 0 -3.28>", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+], "Surface 1:6.3" )
+$# Property Set "NERVURAS_SUPERIORES" created.
+elementprops_create( "NERVURAS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",  @
+"< 0 0 -1>", "<0 0 3.28>", "<0 0 3.28>", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+], "Surface 1:6.1" )
+$# Property Set "NERVURAS_INFERIORES" created.
+$# Warning reported from application ELEM_PROPS
+$#     The section selected is not a good candidate for CBARs because the 
+$# shear center and centroid are not coincident.
+$#  There is no Nastran equivalent section in its beam section library. 
+$# Therefore the properties are written as PBAR and not PBARL entries.
+$#  Consider using the General Section (CBEAM) property instead, which uses 
+$# CBEAM/PBEAML instead.
+elementprops_create( "STRINGERS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec1_chapeu", "m:Al7475" @
+, "< 0 0 1>", "<0 0 9.06>", "<0 0 9.06>", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+], "" )
+$# Property Set "STRINGERS_INFERIORES" created.
+elementprops_create( "STRINGERS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec1_chapeu", "m:Al7475" @
+, "< 0 0 -1>", "<0 0 -9.06>", "<0 0 -9.06>", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+, ""], "Surface 9:11:2.3" )
+$# Property Set "STRINGERS_SUPERIORES" created.
+elementprops_delete( ["STRINGERS_SUPERIORES"] )
+elementprops_create( "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037,  @
+4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], @
+ [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al2024", "", "1.572" @
+, "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "Surface 9:11:2.3" )
+$# Critical Decision requested from application ELEM_PROPS
+$#     The Application Region list contains entities other than elements and 
+$# Surfaces.  Ignore and continue?
+$? YES 29002018 
+$# Property Set "REVESTIMENTO" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+$# Error reported from application ELEM_PROPS
+$#     The Element Properties must be Entered to continue.
+$? NO 29002021 
+elementprops_modify( "REVESTIMENTO", "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [ @
+13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406,  @
+4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], [ @
+"m:Al2024", "", "1.572", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+""], "Surface 1:14" )
+$# Property Set "REVESTIMENTO" modified.
+elementprops_modify( "STRINGERS_INFERIORES", "STRINGERS_INFERIORES", 11, 2,  @
+42, 1, 1, 20, [39, 13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, @
+ 4045, 4037, 4047, 4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, @
+ 8111, 4403, 4404, 4410, 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, @
+ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], [ @
+"Sec1_chapeu", "m:Al7475", "<0. 0. 1.>", "<0. 0. 9.0600004>",  @
+"<0. 0. 9.0600004>", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "Analysis", "Analysis",  @
+"Analysis"], "Surface 7:10:3.3" )
+$# Property Set "STRINGERS_INFERIORES" modified.
+ga_view_center_set( -312.081970, 28.314896 )
+ga_view_zoom_set( 332.381287 )
+ga_view_center_set( -412.034363, 38.329987 )
+ga_view_zoom_set( 373.928955 )
+ga_view_center_set( -308.313904, 25.141861 )
+ga_view_zoom_set( 332.381287 )
+ga_view_center_set( -217.175720, 7.777969 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -138.200989, -6.873062 )
+ga_view_zoom_set( 262.622253 )
+ga_view_center_set( -68.558350, -19.339035 )
+ga_view_zoom_set( 233.442001 )
+ga_view_center_set( -134.579590, -8.822968 )
+ga_view_zoom_set( 262.622253 )
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 7:10:3.3", 16384, 31.4793, "Bar2", "#", "#",  @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,  @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,  @
+fem_create_mesh_c_elems_created )
+$# 11 nodes and 10 elements created for Surface 7.3.
+$# 11 nodes and 10 elements created for Surface 10.3.
+$# === 22 nodes created.  IDs  = 1243:1264.
+$# === 20 elements created.  IDs  = 1001:1020.
+fem_associate_elems_to_ep( "STRINGERS_INFERIORES",  @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 20 Element(s) associated to the Element Property STRINGERS_INFERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 9:11:2.3", 16384, 31.4793, "Bar2", "#", "#",  @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,  @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,  @
+fem_create_mesh_c_elems_created )
+$# 11 nodes and 10 elements created for Surface 9.3.
+$# 11 nodes and 10 elements created for Surface 11.3.
+$# === 22 nodes created.  IDs  = 1265:1286.
+$# === 20 elements created.  IDs  = 1021:1040.
+fem_create_mesh_curv_1( "Surface 1:6.3", 16384, 20.959999, "Bar2", "#", "#",  @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,  @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,  @
+fem_create_mesh_c_elems_created )
+$# 11 nodes and 10 elements created for Surface 1.3.
+$# 11 nodes and 10 elements created for Surface 2.3.
+$# 11 nodes and 10 elements created for Surface 3.3.
+$# 11 nodes and 10 elements created for Surface 4.3.
+$# 11 nodes and 10 elements created for Surface 5.3.
+$# 11 nodes and 10 elements created for Surface 6.3.
+$# === 66 nodes created.  IDs  = 1287:1352.
+$# === 60 elements created.  IDs  = 1041:1100.
+fem_associate_elems_to_ep( "NERVURAS_SUPERIORES",  @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 60 Element(s) associated to the Element Property NERVURAS_SUPERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 1:6.1", 16384, 20.959999, "Bar2", "#", "#",  @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,  @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,  @
+fem_create_mesh_c_elems_created )
+$# 11 nodes and 10 elements created for Surface 1.1.
+$# 11 nodes and 10 elements created for Surface 2.1.
+$# 11 nodes and 10 elements created for Surface 3.1.
+$# 11 nodes and 10 elements created for Surface 4.1.
+$# 11 nodes and 10 elements created for Surface 5.1.
+$# 11 nodes and 10 elements created for Surface 6.1.
+$# === 66 nodes created.  IDs  = 1353:1418.
+$# === 60 elements created.  IDs  = 1101:1160.
+fem_associate_elems_to_ep( "NERVURAS_INFERIORES",  @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 60 Element(s) associated to the Element Property NERVURAS_INFERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 8:13:5.3", 16384, 31.4793, "Bar2", "#", "#",  @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,  @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,  @
+fem_create_mesh_c_elems_created )
+$# 11 nodes and 10 elements created for Surface 8.3.
+$# 11 nodes and 10 elements created for Surface 13.3.
+$# === 22 nodes created.  IDs  = 1419:1440.
+$# === 20 elements created.  IDs  = 1161:1180.
+fem_associate_elems_to_ep( "LONGARINAS_SUPERIORES",  @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 20 Element(s) associated to the Element Property LONGARINAS_SUPERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 7.1 12.3", 16384, 31.4793, "Bar2", "#", "#",  @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,  @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,  @
+fem_create_mesh_c_elems_created )
+$# 11 nodes and 10 elements created for Surface 7.1.
+$# 11 nodes and 10 elements created for Surface 12.3.
+$# === 22 nodes created.  IDs  = 1441:1462.
+$# === 20 elements created.  IDs  = 1181:1200.
+fem_associate_elems_to_ep( "LONGARINAS_INFERIORES",  @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 20 Element(s) associated to the Element Property LONGARINAS_INFERIORES.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.40000001, FALSE,  @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 220 nodes deleted.
+elementprops_modify( "REVESTIMENTO", "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [ @
+13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406,  @
+4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], [ @
+"m:Al2024", "", "1.572", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+""], "Surface 1:8 10 12 13" )
+$# Property Set "REVESTIMENTO" modified.
+elementprops_create( "COMPOSITO", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,  @
+4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Laminado", "", "" @
+, "", "", "", "", "", ""], "Surface 9 11 14" )
+$# Property Set "COMPOSITO" created.
+uil_primary_file.db_save(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+sys_poll_option( 2 )
+pref_fa_set( [FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE], [6, 3, 1, 1, 5, 7, 2, 2, 8, 11, 2, 3, 3, 5, 2, 1, @
+ 3, 6, 5, 5, 3, 2, 2, 2, 2, 2, 6, 6, 6, 9, 9, 3, 5, 5, 5, 1, 3, 3, 15, 13], [ @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE], [3, 4, 5, 6, 1, 1, 7, 8, 9, 10], [TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE], FALSE )
+display_fa_vectors( TRUE )
+result_label_format_set( 1, 4 )
+gm_elem_prop_init_list(  )
+ga_display_offsets_set( "general", 1 )
+ga_display_beam_set( "general", 6 )
+ga_display_pin_dof_set( "general", 1 )
+ga_display_spring_dof_set( "general", 1 )
+sys_poll_option( 0 )
+loadsbcs_create2( "ENGASTE", "Displacement", "Nodal", "", "Static", ["Node 1:23 1979:2001"], "FEM", "Coord 0", "1.", ["<0., 0., 0.>", "<0., 0., 0.>", "", ""], ["", "", "", ""] )
+$# Load/BC set "ENGASTE" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+mscnastran_subcase.create( "101", "Default", "This is a default subcase." )
+mscnastran_subcase.create_char_param( "LOAD CASE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE",  @
+"This is a default subcase." )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL",  @
+"This load case is the default load case that always appears" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE FLAG", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "Default", "STRUCTURAL" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS", "1" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS 1",  @
+"DISPLACEMENT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES 1",  @
+"STRESS(SORT1,REAL,VONMISES,BILIN)=0;PARAM,NOCOMPS,1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",  @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "APPLIED LOADS", "1" )
+mscnastran_subcase.create_char_param( "APPLIED LOADS 1", "OLOAD(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRAINS", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRAINS 1",  @
+"STRAIN(SORT1,REAL,VONMISES,STRCUR,BILIN)=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE DIRECT TEXT POS", "OFF" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE CODE SOL 101",  @
+"LCNTSTAT" )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE SOL 101",  @
+"Linear Contact (LCNT)" )
+mscnastran_subcase.create_char_param( "ANALYSIS PREFERENCE CTRLDEF SOL 101",  @
+"Default (Blank)" )
+mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
+mscnastran_subcase.create_char_param( "ROTOR DYNAMICS", "" )
+mscnastran_subcase.create_char_param( "ALL EXPLICIT MPCS", "ON" )
+uil_primary_file.db_save(  )
+$
