@@ -1,0 +1,23 @@
+
+
+
+
+
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                            Result Stress Tensor,  - Layer Layer 1 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID---Max Shear---
+    8529           0        47.463890
+
+
+                                                      SUMMARY INFORMATION
+                                                  _________________________
+
+                                                         Min/Max Values
+    -Source ID--Entity ID---Sub ID-----Max Shear---
+Min:     1       8529          0        47.463890
+Max:     1       8529          0        47.463890
+

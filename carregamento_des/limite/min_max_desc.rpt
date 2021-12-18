@@ -1,0 +1,50 @@
+
+
+
+
+
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                             Result Stress Tensor,  - Layer At Z1 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID--Max Principal--Min Principal-
+    7504           2         3.617243     -14.091597
+    7504           3         3.774192     -14.041283
+    7504           5         4.719169     -11.597620
+    7504           6         4.578937     -11.664650
+    7504           4         4.138090     -12.814491
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                             Result Stress Tensor,  - Layer At Z2 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID--Max Principal--Min Principal-
+    7504           2         2.023962     -16.739534
+    7504           3         2.128758     -16.685091
+    7504           5         3.583650     -14.384104
+    7504           6         3.494342     -14.454034
+    7504           4         2.761843     -15.519855
+
+
+                                                      SUMMARY INFORMATION
+                                                  _________________________
+
+                                                         Min/Max Values
+    -Source ID--Entity ID---Sub ID----Max Principal-
+Min:     2       7504          2         2.023962
+Max:     1       7504          5         4.719169
+    -Source ID--Entity ID---Sub ID----Min Principal-
+Min:     2       7504          2       -16.739534
+Max:     1       7504          5       -11.597620
+
+
+                                                         Result Sources
+-Source Id---Loadcase Name---------Subcase Name---------Layer Name----
+      1     SC1:DEFAULT           A1:Static subcase    At Z1              
+      2     SC1:DEFAULT           A1:Static subcase    At Z2              
+
+
+

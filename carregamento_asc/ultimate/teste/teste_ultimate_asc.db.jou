@@ -1,0 +1,7 @@
+$# Creating journal file 
+$# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_asc\ultimate\tes
+$# te\teste_ultimate_asc.db.jou at 18-Dec-21 20:04:19
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
+"/template.db","C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento" // @
+"_asc\ultimate\teste\teste_ultimate_asc.db")
+$# Synchronizing the User Data Manager

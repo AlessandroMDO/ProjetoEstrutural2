@@ -1,0 +1,99 @@
+
+
+
+
+
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                            Result Strain Tensor,  - Layer Layer 1 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID--X Component---Y Component---XY Component-
+    8529           0        -0.000850      0.000024      0.002115
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                            Result Strain Tensor,  - Layer Layer 2 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID--X Component---Y Component---XY Component-
+    8529           0         0.001690     -0.002537      0.000441
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                            Result Strain Tensor,  - Layer Layer 3 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID--X Component---Y Component---XY Component-
+    8529           0        -0.002545      0.001677     -0.000445
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                            Result Strain Tensor,  - Layer Layer 4 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID--X Component---Y Component---XY Component-
+    8529           0         0.000005     -0.000894     -0.002109
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                            Result Strain Tensor,  - Layer Layer 5 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID--X Component---Y Component---XY Component-
+    8529           0        -0.000002     -0.000909     -0.002108
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                            Result Strain Tensor,  - Layer Layer 6 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID--X Component---Y Component---XY Component-
+    8529           0        -0.002571      0.001640     -0.000458
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                            Result Strain Tensor,  - Layer Layer 7 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID--X Component---Y Component---XY Component-
+    8529           0         0.001628     -0.002580      0.000462
+                       MSC.Patran 27.1.801631 Thu Mar 25 06:46:07 PDT 2021 - Analysis Code: MSC.Nastran 
+                                           Load Case: SC1:DEFAULT, A1:Static subcase 
+                                            Result Strain Tensor,  - Layer Layer 8 
+                                                     Entity: Element Tensor
+
+
+-Entity ID--El. Pos. ID--X Component---Y Component---XY Component-
+    8529           0        -0.000953     -0.000021      0.002102
+
+
+                                                      SUMMARY INFORMATION
+                                                  _________________________
+
+                                                         Min/Max Values
+    -Source ID--Entity ID---Sub ID----X Component--
+Min:     6       8529          0        -0.002571
+Max:     2       8529          0         0.001690
+    -Source ID--Entity ID---Sub ID----Y Component--
+Min:     7       8529          0        -0.002580
+Max:     3       8529          0         0.001677
+    -Source ID--Entity ID---Sub ID----XY Component-
+Min:     4       8529          0        -0.002109
+Max:     1       8529          0         0.002115
+
+
+                                                         Result Sources
+-Source Id---Loadcase Name---------Subcase Name---------Layer Name----
+      1     SC1:DEFAULT           A1:Static subcase    Layer 1            
+      2     SC1:DEFAULT           A1:Static subcase    Layer 2            
+      3     SC1:DEFAULT           A1:Static subcase    Layer 3            
+      4     SC1:DEFAULT           A1:Static subcase    Layer 4            
+      5     SC1:DEFAULT           A1:Static subcase    Layer 5            
+      6     SC1:DEFAULT           A1:Static subcase    Layer 6            
+      7     SC1:DEFAULT           A1:Static subcase    Layer 7            
+      8     SC1:DEFAULT           A1:Static subcase    Layer 8            
+
+
+

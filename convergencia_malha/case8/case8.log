@@ -1,0 +1,144 @@
+MSC Nastran V2021.1 (Intel Windows 10 Pro 6.2 9200) Control File: 
+----------------------------------------------------------------- 
+Nastran BUFFSIZE=8193 $(c:/program files/msc.software/napa_se/20211/nastran/conf/nast20211.rcf[2])
+JID='C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\convergencia_malha\case8\case8.bdf'
+OUT='./case8'
+MEM=527MB      $ 
+MACH='Intel'
+OPER='Windows 10 Pro'
+OSV='6.2 9200'
+MODEL='Xeon/2693 (DESKTOP-HH2QMJP)'
+NPROC='4'
+CONFIG=6
+NPROC=4
+symbol=DELDIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/del' $(program default)
+symbol=DEMODIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/demo' $(program default)
+symbol=SSSALTERDIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/sssalter' $(program default)
+symbol=TPLDIR='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/tpl' $(program default)
+SDIR='c:/scratch/case8.T7064_47'
+DBS='c:/scratch/case8.T7064_47'
+SCR='yes'
+SMEM=100
+BPOOL=150
+DMPMEM=0
+NEWDEL='c:/program files/msc.software/napa_se/20211/nastran/msc20211/win64i8/SSS'
+DEL='MSCDEF'
+DML=MSCDEF
+SDL=MSCDEF
+AUTH='edu'
+AUTHQUE=20
+MSGCAT='c:/program files/msc.software/napa_se/20211/nastran/msc20211/win64i8/analysis.msg'
+MSGDEST='f06'
+PROG=edu
+NEWS='c:/program files/msc.software/napa_se/20211/nastran/msc20211/nast/news.txt'
+----------------------------------------------------------------- 
+MSC_ISHELLPATH=c:\users\user\desktop\saa205\entregas\projeto\convergencia_malha\case8 
+MSC_JIDPATH= 
+PATH=c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\nCode\bin;c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\nvidia;c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\lib;c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\MSC.Software\NaPa_SE\20211\Patran\bin;C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;C:\Program Files\dotnet\;C:\Program Files\MATLAB\R2018b\runtime\win64;C:\Program Files\MATLAB\R2018b\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\MSC.Software\NaPa_SE\20211\Nastran\bin;C:\Users\User\anaconda3\bin;C:\Users\User\anaconda3;C:\Users\User\anaconda3\Scripts;%cd%;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin 
+SCA_SERVICE_CATALOG=c:\program files\msc.software\napa_se\20211\nastran\msc20211\res\SCAServiceCatalog.xml 
+SCA_RESOURCE_DIR=c:\program files\msc.software\napa_se\20211\nastran\msc20211\res 
+Cmd Line:    C:\Program Files\MSC.Software\NaPa_SE\20211\Nastran\msc20211\win64i8\nastran.exe case8.bdf prog=edu auth=edu bat=no 
+Current Dir: C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\convergencia_malha\case8 
+Time Cmd:    c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\msctime 
+Executable:  c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\analysis.exe 
+Arch= Kywd:  [Not specified]  
+MSC_MSG:     stderr  
+FPE:         yes  
+----------------------------------------------------------------- 
+Current resource limits:
+ Physical memory:                     8067 MB
+ Physical memory available:           1711 MB
+ Paging file size:                   20348 MB
+ Paging file size available:          4201 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134213511 MB
+----------------------------------------------------------------- 
+System configuration:
+ Hostname:         DESKTOP-HH2QMJP
+ Architecture:     win64i8
+ Platform:         Intel Windows 10 Pro 6.2 9200 (Windows Compute Cluster)
+ Model:            Xeon/2694
+ Clock freq.:      2695 MHz
+ Number of CPUs:   4
+ Executable:       standard
+ Raw model ID:     6
+ Config number:    6
+ Physical memory:  8067 MB
+ Virtual memory:   20348 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: "c:/program files/msc.software/napa_se/20211/nastran/msc20211/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
+                   <ccs_cmd> (Windows CCS nodes)
+----------------------------------------------------------------- 
+MSC Nastran started  Wed Nov 24 19:57:52 HodB 2021 
+ 19:57:53  Beginning Analysis
+SCA Kernel 25.0.764713 successfully initialized
+BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\libimalloc.dll" has been loaded.
+BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\mkl_core.dll" has been loaded.
+BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\mkl_intel_thread.dll" has been loaded.
+BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\mkl_rt.dll" has been loaded.
+BLAS/LAPACK .dll "c:\program files\msc.software\napa_se\20211\nastran\msc20211\win64i8\MSCblas.dll" has been loaded.
+
+ 19:57:53  MSC Authorization Information - Checkout Successful (1016, 0)
+ 19:57:53  -------------------------------------------------------------
+ 19:57:53  Acquired 1 license for Student Edition Nastran
+
+
+Beginning bulk data processing using the IFPStar component.
+For more information on IFPStar, please see KB article KB8019200
+on our support pages, at http://simcompanion.mscsoftware.com.
+
+ 19:57:54  33278 records read from JID file "C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\convergencia_malha\case8\case8.bdf"
+
+Processing of bulk data entries is complete.
+
+ 19:57:54  Analysis started.
+ 19:57:54  Geometry access/verification to CAD part initiated (if needed).
+ 19:57:54  Geometry access/verification to CAD part successfully completed (if needed).
+ 19:57:54  Finite element model generation started.
+ 19:57:55  Finite element model generated 64092 degrees of freedom.
+ 19:57:55  Finite element model generation successfully completed.
+ 19:57:55  Application of Loads and Boundary Conditions to the finite element model started.
+ 19:57:55  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 19:57:56  Solution of the system equations for linear statics started.
+ 19:57:56  Solution of the system equations for linear statics successfully completed.
+ 19:57:59  Linear static analysis completed.
+ ================================================== 
+ Warning/Fatal Message Summary           Occurrence
+       USER WARNING MESSAGE     6418.0          1 
+       USER WARNING MESSAGE     6418.0          1 
+ ================================================== 
+ 19:57:59  22 records read from JID file "C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\convergencia_malha\case8\case8.bdf"
+ 19:57:59  NSEXIT: EXIT(0)
+ 19:57:59  Analysis complete  0
+Real:        6.327 seconds ( 0:00:06.327)
+User:        4.062 seconds ( 0:00:04.062)
+Sys:         2.140 seconds ( 0:00:02.140)
+ ==================================================
+ OS:                           6.2
+ OEM ID:                       9
+ Model:                        Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz  
+ Number of processors:         4
+ Page size:                    4096
+ Processor type:               8664
+ Minimum application address:  10000
+ Maximum application address:  fffeffff
+ Active processor mask:        15
+ Nsocket:                      1
+ Ncore:                        2  ( 1 X 2 )
+ HyperThreading:               On
+ Ram:                          8067 Mb
+ ==================================================
+ Time Summary                 CPU       Wall   ( Time in Seconds )
+ Solver                       1.3          1 
+ Miscellaneous                4.5          5 
+ -------------------------------------------
+ Total:                       5.9          6 
+ ==================================================
+ Consider using SOLVE=AUTO if you have not.
+ =====================================================
+ Detailed performance information can be found in the 
+ "MSC Nastran High Performance Computing User's Guide"
+ =====================================================
+MSC Nastran finished Wed Nov 24 19:58:00 HodB 2021 

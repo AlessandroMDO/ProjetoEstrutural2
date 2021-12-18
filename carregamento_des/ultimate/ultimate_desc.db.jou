@@ -1,0 +1,899 @@
+$# Creating journal file 
+$# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_des\ultimate\ult
+$# imate_desc.db.jou at 18-Dec-21 10:11:36
+uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
+"/template.db","C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento" // @
+"_des\ultimate\ultimate_desc.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamen" // @
+"to_des\ultimate\" )
+db_set_pref( 303, 3, 0, FALSE, 0.40000001, "" )
+STRING asm_create_patch_xy_created_ids[VIRTUAL]
+asm_const_patch_xyz( "1", "<209.6 0 157.2>", "[0 0 0]", "Coord 0",   @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 1
+asm_const_patch_xyz( "2", "<209.6 0 157.2>", "[209.6 0 0]", "Coord 0",   @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 2
+asm_const_patch_xyz( "3", "<209.6 0 157.2>", "[419.2 0 0]", "Coord 0",   @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 3
+asm_const_patch_xyz( "4", "<209.6 0 125.76>", "[0 -314.4 15.72]", "Coord 0",   @
+asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 4
+asm_const_patch_xyz( "5", "<209.6 0 125.76>", "[209.6 -314.4 15.72]",   @
+"Coord 0", asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 5
+asm_const_patch_xyz( "6", "<209.6 0 125.76>", "[419.2 -314.4 15.72]",   @
+"Coord 0", asm_create_patch_xy_created_ids )
+$# 1 Patch created: Patch 6
+STRING sgm_surface_2curve_created_ids[VIRTUAL]
+sgm_const_surface_2curve( "7", "Surface 1.1", "Surface 4.1",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 7
+sgm_const_surface_2curve( "8", "Surface 1.4", "Surface 4.4",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 8
+sgm_const_surface_2curve( "9", "Surface 1.3", "Surface 4.3",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 9
+sgm_const_surface_2curve( "10", "Surface 2.1", "Surface 5.1",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 10
+sgm_const_surface_2curve( "11", "Surface 2.3", "Surface 5.3",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 11
+sgm_const_surface_2curve( "12", "Surface 3.1", "Surface 6.1",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 12
+sgm_const_surface_2curve( "13", "Surface 3.2", "Surface 6.2",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 13
+sgm_const_surface_2curve( "14", "Surface 3.3", "Surface 6.3",   @
+sgm_surface_2curve_created_ids )
+$# 1 Surface Created: Surface 14
+ui_exec_function( "mesh_seed_display_mgr", "init" )
+mesh_seed_create( "Surface 1.4 1.2 2.2 3.2 4.4 4.2 5.2 6.2 ", 1, 22, 0., 0.,  @
+0. )
+mesh_seed_create( "Surface 7.3 7.1 8.3 9.3 10.3 11.3 12.3 13.3 1.3 1.1 4.3" // @
+" 4.1 2.3 2.1 5.35.1 3.3 3.1 6.3 6.1", 1, 32, 0., 0., 0. )
+ga_view_aa_set( -64.534210, 0.959981, 45.872231 )
+INTEGER fem_create_mesh_surfa_num_nodes
+INTEGER fem_create_mesh_surfa_num_elems
+STRING fem_create_mesh_s_nodes_created[VIRTUAL]
+STRING fem_create_mesh_s_elems_created[VIRTUAL]
+fem_create_mesh_surf_4( "IsoMesh", 49152, "Surface 1:14", 1, ["50.3291"],   @
+"Quad4", "#", "#", "Coord 0", "Coord 0", fem_create_mesh_surfa_num_nodes,   @
+fem_create_mesh_surfa_num_elems, fem_create_mesh_s_nodes_created,   @
+fem_create_mesh_s_elems_created )
+$# 759 nodes and 704 elements created for Surface 1.
+$# 759 nodes and 704 elements created for Surface 2.
+$# 759 nodes and 704 elements created for Surface 3.
+$# 759 nodes and 704 elements created for Surface 4.
+$# 759 nodes and 704 elements created for Surface 5.
+$# 759 nodes and 704 elements created for Surface 6.
+$# 1089 nodes and 1024 elements created for Surface 7.
+$# 759 nodes and 704 elements created for Surface 8.
+$# 1089 nodes and 1024 elements created for Surface 9.
+$# 1089 nodes and 1024 elements created for Surface 10.
+$# 1089 nodes and 1024 elements created for Surface 11.
+$# 1089 nodes and 1024 elements created for Surface 12.
+$# 759 nodes and 704 elements created for Surface 13.
+$# 1089 nodes and 1024 elements created for Surface 14.
+$# === 12606 nodes created.  IDs  = 1:12606.
+$# === 11776 elements created.  IDs  = 1:11776.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+INTEGER fem_equiv_all_x_segment
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.40000001, FALSE,   @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 828 nodes deleted.
+ga_view_center_set( -262.902466, 76.842712 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -192.075867, 65.952354 )
+ga_view_zoom_set( 262.622253 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadsbcs_create2( "F1", "Force", "Nodal", "", "Static", ["Point 9 12"],   @
+"Geometry", "Coord 0", "1.", ["<0 0 -24872.145>", "<     >", "<     >",  @
+"<     >"],  ["", "", "", ""] )
+$# Load/BC set "F1" created.
+loadsbcs_create2( "F2", "Force", "Nodal", "", "Static", ["Point 15 16"],   @
+"Geometry", "Coord 0", "1.", ["<0 0 -8290.71>", "<     >", "<     >",  @
+"<     >"],  ["", "", "", ""] )
+$# Load/BC set "F2" created.
+loadsbcs_create2( "F3", "Force", "Nodal", "", "Static", ["Point 9 15"],   @
+"Geometry", "Coord 0", "1.", ["<0 3316.275 0>", "<     >", "<     >",  @
+"<     >"] , ["", "", "", ""] )
+$# Load/BC set "F3" created.
+loadsbcs_create2( "F4", "Force", "Nodal", "", "Static", ["Point 12 16"],   @
+"Geometry", "Coord 0", "1.", ["<0 -4974.42 0>", "<     >", "<     >",  @
+"<     >"],  ["", "", "", ""] )
+$# Load/BC set "F4" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al7475", 0,   @
+"Date: 14-Jul-21           Time: 15:08:11", "Isotropic", 1, "Directionality",  @
+ 1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,   @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",   @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",   @
+"Poisson Ratio"], [2, 5, 0], "Property Values", ["68947.57", "0.33", ""] )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Al2024", 0,   @
+"Date: 14-Jul-21           Time: 15:08:11", "Isotropic", 1, "Directionality",  @
+ 1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,   @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",   @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",   @
+"Poisson Ratio"], [2, 5, 0], "Property Values", ["72394.95", "0.33", ""] )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Ply", 0,   @
+"Date: 11-Nov-21           Time: 14:03:05", "2d Orthotropic", 5,   @
+"Directionality", 4, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,   @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",   @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus 11" @
+ , "Elastic Modulus 22", "Poisson Ratio 12", "Shear Modulus 12",   @
+"Shear Modulus 23", "Shear Modulus 13"], [2, 3, 5, 8, 9, 10, 0],   @
+"Property Values", ["100000", "10000", "0.34", "5400", "3050", "5400", ""] )
+mat_create_lam3( "Laminado", "", 1, ["Ply", "Ply", "Ply", "Ply", "Ply", "Ply", @
+  "Ply", "Ply"], [" 1.000000E-01", " 1.000000E-01", " 1.000000E-01",   @
+" 1.000000E-01", " 1.000000E-01", " 1.000000E-01", " 1.000000E-01",   @
+" 1.000000E-01"], [" 0.000000E+00", " 4.500000E+01", "-4.500000E+01",   @
+" 9.000000E+01", " 9.000000E+01", "-4.500000E+01", " 4.500000E+01",   @
+" 0.000000E+00"], ["", "", "", "", "", "", "", ""], 8, "", "Create" )
+beam_section_create( "Sec1_chapeu", "HAT", ["15.72", "1.048", "15.72", "5.24"] )
+$# Beam Section "Sec1_chapeu" created.
+beam_section_create( "Sec2_t", "T", ["15.72", "10.48", "1.048", "1.048"] )
+$# Beam Section "Sec2_t" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+elementprops_create( "NERVURAS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,   @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,   @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+ 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, @
+  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",   @
+"<0 0 1>", "<0 0 -3.28>", "<0 0 -3.28>", "", "", "", "", "", "", "", "", "",   @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "Analysis" @
+ , "Analysis", "Analysis"], "Surface 8:13:5.3" )
+$# Property Set "NERVURAS_SUPERIORES" created.
+uil_toolbar.shaded_smooth(  )
+elementprops_delete( ["NERVURAS_SUPERIORES"] )
+$# 1 Property Sets deleted.
+sandia_utils.delete_n_metadata( 1, ["NERVURAS_SUPERIORES"] )
+elementprops_create( "LONGARINAS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6, @
+  4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048, @
+  4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
+4410,  4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, @
+ 1, 1,  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t",  @
+"m:Al7475",  "< 0 0 1>", "<0 0 -3.28>", "<0 0 -3.28>", "", "", "", "", "", "", @
+ "", "", "",  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "" ], "Surface 8:13:5.3" )
+$# Property Set "LONGARINAS_SUPERIORES" created.
+elementprops_create( "LONGARINAS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6, @
+  4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048, @
+  4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
+4410,  4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, @
+ 1, 1,  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t",  @
+"m:Al7475",  "< 0 0 -1>", "<0 0 3.28>", "<0 0 3.28>", "", "", "", "", "", "",  @
+"", "", "",  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "" ], "Surface 7.1 12.3" )
+$# Property Set "LONGARINAS_INFERIORES" created.
+elementprops_create( "NERVURAS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,   @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,   @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+ 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, @
+  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",   @
+"< 0 0 1>", "<0 0 -3.28>", "<0 0 -3.28>", "", "", "", "", "", "", "", "", "",  @
+ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"" ], "Surface 1:6.3" )
+$# Property Set "NERVURAS_SUPERIORES" created.
+elementprops_create( "NERVURAS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,   @
+4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,   @
+4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
+ 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, @
+  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",   @
+"< 0 0 -1>", "<0 0 3.28>", "<0 0 3.28>", "", "", "", "", "", "", "", "", "",   @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+ ], "Surface 1:6.1" )
+$# Property Set "NERVURAS_INFERIORES" created.
+elementprops_create( "STRINGERS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+ 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+ 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, @
+  4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1,  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec1_chapeu",  @
+"m:Al7475" , "< 0 0 1>", "<0 0 9.06>", "<0 0 9.06>", "", "", "", "", "", "",  @
+"", "", "",  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "" ], "" )
+$# Property Set "STRINGERS_INFERIORES" created.
+elementprops_create( "STRINGERS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
+ 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
+ 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, @
+  4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1,  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec1_chapeu",  @
+"m:Al7475" , "< 0 0 -1>", "<0 0 -9.06>", "<0 0 -9.06>", "", "", "", "", "", "" @
+, "", "",  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", @
+ "", "", "" , ""], "Surface 9:11:2.3" )
+$# Property Set "STRINGERS_SUPERIORES" created.
+elementprops_delete( ["STRINGERS_SUPERIORES"] )
+$# 1 Property Sets deleted.
+elementprops_create( "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037,  @
+ 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409] @
+,  [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al2024", "",  @
+"1.572" , "", "", "", "", "", "", "", "", "", "", "", "", "", ""],  @
+"Surface 9:11:2.3" )
+$# Critical Decision requested from application ELEM_PROPS
+$#     The Application Region list contains entities other than elements and 
+$# Surfaces.  Ignore and continue?
+$? YES 29002018 
+$# Property Set "REVESTIMENTO" created.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+elementprops_modify( "REVESTIMENTO", "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [  @
+13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406,  @
+ 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], [  @
+"m:Al2024", "", "1.5", "", "", "", "", "", "", "", "", "", "", "", "", "",  "" @
+], "Surface 1:14" )
+$# Property Set "REVESTIMENTO" modified.
+elementprops_modify( "STRINGERS_INFERIORES", "STRINGERS_INFERIORES", 11, 2,   @
+42, 1, 1, 20, [39, 13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, @
+  4045, 4037, 4047, 4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061,  @
+4303,  8111, 4403, 4404, 4410, 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, @
+ 1, 1,  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4,  @
+4, 4], [ "Sec1_chapeu", "m:Al7475", "<0. 0. 1.>", "<0. 0. 9.0600004>",   @
+"<0. 0. 9.0600004>", "", "", "", "", "", "", "", "", "", "", "", "", "", "",   @
+"", "", "", "", "", "", "", "", "", "", "", "", "Analysis", "Analysis",   @
+"Analysis"], "Surface 7:10:3.3" )
+$# Property Set "STRINGERS_INFERIORES" modified.
+ga_view_center_set( -312.081970, 28.314896 )
+ga_view_zoom_set( 332.381287 )
+ga_view_center_set( -412.034363, 38.329987 )
+ga_view_zoom_set( 373.928955 )
+ga_view_center_set( -308.313904, 25.141861 )
+ga_view_zoom_set( 332.381287 )
+ga_view_center_set( -217.175720, 7.777969 )
+ga_view_zoom_set( 295.450043 )
+ga_view_center_set( -138.200989, -6.873062 )
+ga_view_zoom_set( 262.622253 )
+ga_view_center_set( -68.558350, -19.339035 )
+ga_view_zoom_set( 233.442001 )
+ga_view_center_set( -134.579590, -8.822968 )
+ga_view_zoom_set( 262.622253 )
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 7:10:3.3", 16384, 31.4793, "Bar2", "#", "#",  @
+ "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 33 nodes and 32 elements created for Surface 7.3.
+$# 33 nodes and 32 elements created for Surface 10.3.
+$# === 66 nodes created.  IDs  = 12573:12638.
+$# === 64 elements created.  IDs  = 11777:11840.
+fem_associate_elems_to_ep( "STRINGERS_INFERIORES",   @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 64 Element(s) associated to the Element Property STRINGERS_INFERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 9:11:2.3", 16384, 31.4793, "Bar2", "#", "#",  @
+ "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 33 nodes and 32 elements created for Surface 9.3.
+$# 33 nodes and 32 elements created for Surface 11.3.
+$# === 66 nodes created.  IDs  = 12639:12704.
+$# === 64 elements created.  IDs  = 11841:11904.
+fem_create_mesh_curv_1( "Surface 1:6.3", 16384, 20.959999, "Bar2", "#", "#",   @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 33 nodes and 32 elements created for Surface 1.3.
+$# 33 nodes and 32 elements created for Surface 2.3.
+$# 33 nodes and 32 elements created for Surface 3.3.
+$# 33 nodes and 32 elements created for Surface 4.3.
+$# 33 nodes and 32 elements created for Surface 5.3.
+$# 33 nodes and 32 elements created for Surface 6.3.
+$# === 198 nodes created.  IDs  = 12705:12902.
+$# === 192 elements created.  IDs  = 11905:12096.
+fem_associate_elems_to_ep( "NERVURAS_SUPERIORES",   @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 192 Element(s) associated to the Element Property NERVURAS_SUPERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 1:6.1", 16384, 20.959999, "Bar2", "#", "#",   @
+"Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 33 nodes and 32 elements created for Surface 1.1.
+$# 33 nodes and 32 elements created for Surface 2.1.
+$# 33 nodes and 32 elements created for Surface 3.1.
+$# 33 nodes and 32 elements created for Surface 4.1.
+$# 33 nodes and 32 elements created for Surface 5.1.
+$# 33 nodes and 32 elements created for Surface 6.1.
+$# === 198 nodes created.  IDs  = 12903:13100.
+$# === 192 elements created.  IDs  = 12097:12288.
+fem_associate_elems_to_ep( "NERVURAS_INFERIORES",   @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 192 Element(s) associated to the Element Property NERVURAS_INFERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 8:13:5.3", 16384, 31.4793, "Bar2", "#", "#",  @
+ "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 33 nodes and 32 elements created for Surface 8.3.
+$# 33 nodes and 32 elements created for Surface 13.3.
+$# === 66 nodes created.  IDs  = 13101:13166.
+$# === 64 elements created.  IDs  = 12289:12352.
+fem_associate_elems_to_ep( "LONGARINAS_SUPERIORES",   @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 64 Element(s) associated to the Element Property LONGARINAS_SUPERIORES.
+INTEGER fem_create_mesh_curve_num_nodes
+INTEGER fem_create_mesh_curve_num_elems
+STRING fem_create_mesh_c_nodes_created[VIRTUAL]
+STRING fem_create_mesh_c_elems_created[VIRTUAL]
+fem_create_mesh_curv_1( "Surface 7.1 12.3", 16384, 31.4793, "Bar2", "#", "#",  @
+ "Coord 0", "Coord 0", fem_create_mesh_curve_num_nodes,   @
+fem_create_mesh_curve_num_elems, fem_create_mesh_c_nodes_created,   @
+fem_create_mesh_c_elems_created )
+$# 33 nodes and 32 elements created for Surface 7.1.
+$# 33 nodes and 32 elements created for Surface 12.3.
+$# === 66 nodes created.  IDs  = 13167:13232.
+$# === 64 elements created.  IDs  = 12353:12416.
+fem_associate_elems_to_ep( "LONGARINAS_INFERIORES",   @
+fem_create_mesh_c_elems_created, fem_create_mesh_curve_num_elems )
+$# 64 Element(s) associated to the Element Property LONGARINAS_INFERIORES.
+mesh_seed_display_mgr.erase(  )
+REAL fem_equiv_all_x_equivtol_ab
+fem_equiv_all_group5( [" "], 0, "", 1, 1, 0.40000001, FALSE,   @
+fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
+$# Realigning database with new node numbers...
+$# Database realignment completed.
+$# Geometric equivalencing completed. 660 nodes deleted.
+elementprops_modify( "REVESTIMENTO", "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [  @
+13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406,  @
+ 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], [  @
+"m:Al2024", "", "1.572", "", "", "", "", "", "", "", "", "", "", "", "", "",   @
+""], "Surface 1:8 10 12 13" )
+$# Property Set "REVESTIMENTO" modified.
+elementprops_create( "COMPOSITO", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,   @
+4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Laminado", "", "" @
+ , "", "", "", "", "", ""], "Surface 9 11 14" )
+$# Property Set "COMPOSITO" created.
+uil_primary_file.db_save(  )
+$# Reclaimed 1.35 MB of 4.90 MB.
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+sys_poll_option( 2 )
+pref_fa_set( [FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,   @
+FALSE, FALSE, FALSE, FALSE], [6, 3, 1, 1, 5, 7, 2, 2, 8, 11, 2, 3, 3, 5, 2, 1, @
+  3, 6, 5, 5, 3, 2, 2, 2, 2, 2, 6, 6, 6, 9, 9, 3, 5, 5, 5, 1, 3, 3, 15, 13], [ @
+ TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, @
+  TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE,  TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, @
+ TRUE,  TRUE], [3, 4, 5, 6, 1, 1, 7, 8, 9, 10], [TRUE, TRUE, TRUE, TRUE, TRUE, @
+ TRUE,  TRUE, TRUE, TRUE, TRUE], FALSE )
+display_fa_vectors( TRUE )
+result_label_format_set( 1, 4 )
+gm_elem_prop_init_list(  )
+ga_display_offsets_set( "general", 1 )
+ga_display_beam_set( "general", 6 )
+ga_display_pin_dof_set( "general", 1 )
+ga_display_spring_dof_set( "general", 1 )
+sys_poll_option( 0 )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+gm_hilight_clear(  )
+loadsbcs_create2( "ENGASTE", "Displacement", "Nodal", "", "Static", [ @
+"Surface 1:2.1.2 3.2 1:2.2.2 1.4"], "Geometry", "Coord 0", "1.", [ @
+"<0., 0., 0.>", "<0., 0., 0.>", "", ""], ["", "", "", ""] )
+$# Load/BC set "ENGASTE" created.
+mscnastran_subcase.create( "101", "Default", "This is a default subcase." )
+mscnastran_subcase.create_char_param( "LOAD CASE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE",   @
+"This is a default subcase." )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE", "Default" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL",   @
+"This load case is the default load case that always appears" )
+mscnastran_subcase.create_char_param( "SUBCASE TITLE FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "SUBCASE SUBTITLE FLAG", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE LABEL FLAG", "OFF" )
+mscnastran_subcase.create_char_param( "Default", "STRUCTURAL" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS", "1" )
+mscnastran_subcase.create_char_param( "DISPLACEMENTS 1",   @
+"DISPLACEMENT(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRESSES 1",   @
+"STRESS(SORT1,REAL,VONMISES,BILIN)=0;PARAM,NOCOMPS,1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES", "1" )
+mscnastran_subcase.create_char_param( "CONSTRAINT FORCES 1",   @
+"SPCFORCES(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "APPLIED LOADS", "1" )
+mscnastran_subcase.create_char_param( "APPLIED LOADS 1", "OLOAD(SORT1,REAL)=0" )
+mscnastran_subcase.create_char_param( "ELEMENT STRAINS", "1" )
+mscnastran_subcase.create_char_param( "ELEMENT STRAINS 1",   @
+"STRAIN(SORT1,REAL,VONMISES,STRCUR,BILIN)=0" )
+mscnastran_subcase.create_char_param( "SUBCASE WRITE", "ON" )
+mscnastran_subcase.create_char_param( "SUBCASE DIRECT TEXT POS", "OFF" )
+mscnastran_subcase.create_int_param( "SUBCASE INPUT 0", 0 )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE CODE SOL 101",   @
+"LCNTSTAT" )
+mscnastran_subcase.create_char_param( "INCREMENT TYPE SOL 101",   @
+"Linear Contact (LCNT)" )
+mscnastran_subcase.create_char_param( "ANALYSIS PREFERENCE CTRLDEF SOL 101",   @
+"Default (Blank)" )
+mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
+mscnastran_subcase.create_char_param( "ROTOR DYNAMICS", "" )
+mscnastran_subcase.create_char_param( "ALL EXPLICIT MPCS", "ON" )
+uil_primary_file.db_save(  )
+$
+$# Session file stopped playing (level 1)
+$#  Beginning analysis of  ultimate_desc
+jobfile.open( "ultimate_desc", "ANALYZE NO JOBFILE" )
+msc_delete_old_files( "ultimate_desc", ".bdf", ".h5" )
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["18-Dec-21" @
+, "10:11:49"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO" // @
+"\carregamento_des\ultimate\ultimate_desc.db" )
+jobfile.writec( "JOBNAME", "ultimate_desc" )
+jobfile.writec( "ANALYSIS TITLE", "MSC.Nastran job created on 18-Dec-21 at" // @
+" 10:11:44" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Full Run" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\alters" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\bin" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "C:\Users\User" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
+"\20211\Patran\mscexplore_files\" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "HDF5+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2021." )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "0.40000001" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "LINEAR STATIC" )
+jobfile.writei( "SOLUTION SEQUENCE", 101 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "INERTIA RELIEF", "OFF" )
+jobfile.writec( "ALTERNATE REDUCTION", "OFF" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 0 )
+jobfile.writei( "CONTACT-DEFORMABLE-DEFORMABLE METHOD", 0 )
+jobfile.writec( "CONTACT CHECK", "OFF" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-DERIVATION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "USE SOL700", "OFF" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\User" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "OFF" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "101", "ultimate_desc", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "ultimate_desc" )
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11841.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11842.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11843.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11844.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11845.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11846.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11847.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11848.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11849.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11850.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11851.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11852.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11853.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11854.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11855.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11856.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11857.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11858.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11859.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11860.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11861.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11862.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11863.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11864.
+$# Warning reported from application APP INTERFACES
+$#     No properties have been defined for the element with ID 11865.
+$# Question from application APP INTERFACES
+$#     Some elements in the model have no types or properties defined. Do you 
+$# wish to continue with the translation?
+$? YES 6018002 
+$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-HH2QMJP(
+$# 5cc9d3a28abf) (Windows 6.2 (Build 9200: Service Pack 0)) at 18-Dec-21 
+$# 10:11:50.
+$# 
+$# Reading model information from the specified database, 
+$# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_des\ultimate\ult
+$# imate_desc.db.
+$# Messages output from the Patran 2021.1  (Student Edition) input deck 
+$# translator on December  18, 2021 at 10:11:50.
+$# 
+$# The NASTRAN input file, ultimate_desc.bdf, has been successfully opened.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11841.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11842.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11843.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11844.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11845.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11846.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11847.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11848.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11849.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11850.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11851.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11852.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11853.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11854.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11855.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11856.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11857.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11858.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11859.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11860.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11861.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11862.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11863.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11864.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11865.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11866.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11867.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11868.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11869.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11870.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11871.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11872.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11873.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11874.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11875.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11876.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11877.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11878.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11879.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11880.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11881.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11882.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11883.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11884.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11885.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11886.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11887.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11888.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11889.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11890.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11891.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11892.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11893.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11894.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11895.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11896.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11897.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11898.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11899.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11900.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11901.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11902.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11903.
+$# Warning reported from application APP INTERFACES
+$#     No element properties have been assigned to the element with id = 11904.
+$# Warning reported from application APP INTERFACES
+$#     
+$# The elements listed above which have no assigned element property region 
+$# will not be translated due to the fact that the desired element type is 
+$# unspecified.
+$# 
+$# Translating 64 elements from the element property region 
+$# LONGARINAS_SUPERIORES.
+$# 
+$# Translating 64 elements from the element property region 
+$# LONGARINAS_INFERIORES.
+$# 
+$# Translating 192 elements from the element property region 
+$# NERVURAS_SUPERIORES.
+$# 
+$# Translating 192 elements from the element property region 
+$# NERVURAS_INFERIORES.
+$# 
+$# Translating 64 elements from the element property region 
+$# STRINGERS_INFERIORES.
+$# 
+$# Translating 8704 elements from the element property region REVESTIMENTO.
+$# 
+$# Translating 3072 elements from the element property region COMPOSITO.
+$# 
+$# 7 property regions translated.
+$# 
+$# Translating 3 referenced material records.
+$# 
+$# Translating 11778 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : ENGASTE.
+$# Writing interface element lbcs.
+$# 
+$# Translating nodal forces in load set : F1.
+$# 
+$# Translating nodal forces in load set : F2.
+$# 
+$# Translating nodal forces in load set : F3.
+$# 
+$# Translating nodal forces in load set : F4.
+$# Total execution time in real seconds: 1
+$# Total execution time in CPU seconds: 0.952999
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2021.1  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 18-Dec-21 10:11:51.
+$# The translation has completed successfully.
+$# Executing /bin/sh -c C:\Program 
+$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\MscN
+$# astranExecute.exe -j ultimate_desc -m bdf -x 2021 -c 
+$# %%prog=edu%auth=edu%arch=64
+$# % -v
+$# Session file 
+$# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_des\limite\caixa
+$# o_22_32_des_limite.ses.01 started playing (level 1)
+uil_file_new.go( "C:\Program Files\MSC.Software\NaPa_SE\20211\Patran/templ" // @
+"ate.db", "C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_des\" // @
+"limite\limite_desc" )
+$# Question from application FILE
+$#     A database is already open.
+$# Do you want to create a new database 
+$# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_des\limite\limit
+$# e_desc.db anyway ?
+$? YES 36000037 
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 18-Dec-21 10:12:01
