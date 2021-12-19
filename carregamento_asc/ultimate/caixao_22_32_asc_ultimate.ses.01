@@ -217,7 +217,7 @@ elementprops_create( "LONGARINAS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6, @
 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",  @
-"< 0 0 -1>", "<0 0 3.28>", "<0 0 3.28>", "", "", "", "", "", "", "", "", "",  @
+"< 0 0 -1>", "<0 0 3.24>", "<0 0 3.24>", "", "", "", "", "", "", "", "", "",  @
 "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
 ], "Surface 7.1 12.3" )
 $# Property Set "LONGARINAS_INFERIORES" created.
@@ -235,7 +235,7 @@ elementprops_create( "NERVURAS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",  @
-"< 0 0 -1>", "<0 0 3.28>", "<0 0 3.28>", "", "", "", "", "", "", "", "", "",  @
+"< 0 0 -1>", "<0 0 3.24>", "<0 0 3.24>", "", "", "", "", "", "", "", "", "",  @
 "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
 ], "Surface 1:6.1" )
 $# Property Set "NERVURAS_INFERIORES" created.
@@ -251,10 +251,12 @@ elementprops_create( "STRINGERS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec1_chapeu", "m:Al7475" @
-, "< 0 0 1>", "<0 0 9.06>", "<0 0 9.06>", "", "", "", "", "", "", "", "", "",  @
+, "< 0 0 1>", "<0 0 9.03>", "<0 0 9.03>", "", "", "", "", "", "", "", "", "",  @
 "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
 ], "" )
 $# Property Set "STRINGERS_INFERIORES" created.
+elementprops_create( "INTRADORSO", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al2024", "", "1.5", "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "Surface 7 10 12" )
+$# Property Set "INTRADORSO" created.
 elementprops_create( "STRINGERS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
@@ -265,7 +267,7 @@ elementprops_create( "STRINGERS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
 , ""], "Surface 9:11:2.3" )
 $# Property Set "STRINGERS_SUPERIORES" created.
 elementprops_delete( ["STRINGERS_SUPERIORES"] )
-elementprops_create( "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037,  @
+elementprops_create( "LONGARINAS_NERVURAS", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037,  @
 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], @
  [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al2024", "", "1.572" @
 , "", "", "", "", "", "", "", "", "", "", "", "", "", ""], "Surface 9:11:2.3" )
@@ -273,7 +275,7 @@ $# Critical Decision requested from application ELEM_PROPS
 $#     The Application Region list contains entities other than elements and 
 $# Surfaces.  Ignore and continue?
 $? YES 29002018 
-$# Property Set "REVESTIMENTO" created.
+$# Property Set "LONGARINAS_NERVURAS" created.
 gm_hilight_clear(  )
 gm_hilight_clear(  )
 gm_hilight_clear(  )
@@ -283,19 +285,19 @@ gm_hilight_clear(  )
 $# Error reported from application ELEM_PROPS
 $#     The Element Properties must be Entered to continue.
 $? NO 29002021 
-elementprops_modify( "REVESTIMENTO", "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [ @
+elementprops_modify( "LONGARINAS_NERVURAS", "LONGARINAS_NERVURAS", 51, 25, 35, 1, 1, 20, [ @
 13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406,  @
 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], [ @
 "m:Al2024", "", "1.5", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
 ""], "Surface 1:14" )
-$# Property Set "REVESTIMENTO" modified.
+$# Property Set "LONGARINAS_NERVURAS" modified.
 elementprops_modify( "STRINGERS_INFERIORES", "STRINGERS_INFERIORES", 11, 2,  @
 42, 1, 1, 20, [39, 13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, @
  4045, 4037, 4047, 4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, @
  8111, 4403, 4404, 4410, 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, @
  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], [ @
-"Sec1_chapeu", "m:Al7475", "<0. 0. 1.>", "<0. 0. 9.0600004>",  @
-"<0. 0. 9.0600004>", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"Sec1_chapeu", "m:Al7475", "<0. 0. 1.>", "<0. 0. 9.03>",  @
+"<0. 0. 9.03>", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
 "", "", "", "", "", "", "", "", "", "", "", "", "Analysis", "Analysis",  @
 "Analysis"], "Surface 7:10:3.3" )
 $# Property Set "STRINGERS_INFERIORES" modified.
@@ -411,12 +413,12 @@ fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
 $# Realigning database with new node numbers...
 $# Database realignment completed.
 $# Geometric equivalencing completed. 220 nodes deleted.
-elementprops_modify( "REVESTIMENTO", "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [ @
+elementprops_modify( "LONGARINAS_NERVURAS", "LONGARINAS_NERVURAS", 51, 25, 35, 1, 1, 20, [ @
 13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406,  @
 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], [ @
-"m:Al2024", "", "1.572", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
-""], "Surface 1:8 10 12 13" )
-$# Property Set "REVESTIMENTO" modified.
+"m:Al2024", "", "1.5", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+""], "Surface 1:6 8 13" )
+$# Property Set "LONGARINAS_NERVURAS" modified.
 elementprops_create( "COMPOSITO", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,  @
 4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Laminado", "", "" @
 , "", "", "", "", "", ""], "Surface 9 11 14" )

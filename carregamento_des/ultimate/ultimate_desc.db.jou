@@ -1,6 +1,6 @@
 $# Creating journal file 
 $# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_des\ultimate\ult
-$# imate_desc.db.jou at 18-Dec-21 10:11:36
+$# imate_desc.db.jou at 18-Dec-21 21:02:08
 uil_file_rebuild.start("C:\Program Files\MSC.Software\NaPa_SE\20211\Patran" // @
 "/template.db","C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento" // @
 "_des\ultimate\ultimate_desc.db")
@@ -182,7 +182,7 @@ elementprops_create( "LONGARINAS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6, @
   4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
 4410,  4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, @
  1, 1,  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t",  @
-"m:Al7475",  "< 0 0 -1>", "<0 0 3.28>", "<0 0 3.28>", "", "", "", "", "", "",  @
+"m:Al7475",  "< 0 0 -1>", "<0 0 3.24>", "<0 0 3.24>", "", "", "", "", "", "",  @
 "", "", "",  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
 "", "", "", "" ], "Surface 7.1 12.3" )
 $# Property Set "LONGARINAS_INFERIORES" created.
@@ -200,7 +200,7 @@ elementprops_create( "NERVURAS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,   @
 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410,  @
  4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, @
   1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec2_t", "m:Al7475",   @
-"< 0 0 -1>", "<0 0 3.28>", "<0 0 3.28>", "", "", "", "", "", "", "", "", "",   @
+"< 0 0 -1>", "<0 0 3.24>", "<0 0 3.24>", "", "", "", "", "", "", "", "", "",   @
 "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
  ], "Surface 1:6.1" )
 $# Property Set "NERVURAS_INFERIORES" created.
@@ -209,10 +209,15 @@ elementprops_create( "STRINGERS_INFERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
  4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, @
   4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1,  @
 1,  1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sec1_chapeu",  @
-"m:Al7475" , "< 0 0 1>", "<0 0 9.06>", "<0 0 9.06>", "", "", "", "", "", "",  @
+"m:Al7475" , "< 0 0 1>", "<0 0 9.03>", "<0 0 9.03>", "", "", "", "", "", "",  @
 "", "", "",  "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
 "", "", "", "" ], "" )
 $# Property Set "STRINGERS_INFERIORES" created.
+elementprops_create( "INTRADORSO", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037,  @
+4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409], @
+ [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al2024", "", "1.5",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", ""], "Surface 7 10 12" )
+$# Property Set "INTRADORSO" created.
 elementprops_create( "STRINGERS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
  4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047, 4048,  @
  4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404, 4410, @
@@ -224,36 +229,36 @@ elementprops_create( "STRINGERS_SUPERIORES", 11, 2, 42, 1, 1, 20, [39, 13, 6,  @
 $# Property Set "STRINGERS_SUPERIORES" created.
 elementprops_delete( ["STRINGERS_SUPERIORES"] )
 $# 1 Property Sets deleted.
-elementprops_create( "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [13, 20, 36, 4037,  @
- 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407, 4408, 4409] @
-,  [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al2024", "",  @
-"1.572" , "", "", "", "", "", "", "", "", "", "", "", "", "", ""],  @
+elementprops_create( "LONGARINAS_NERVURAS", 51, 25, 35, 1, 1, 20, [13, 20, 36, @
+ 4037,  4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406, 4407,  @
+4408, 4409],  [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], ["m:Al2024" @
+, "", "1.572" , "", "", "", "", "", "", "", "", "", "", "", "", "", ""],  @
 "Surface 9:11:2.3" )
 $# Critical Decision requested from application ELEM_PROPS
 $#     The Application Region list contains entities other than elements and 
 $# Surfaces.  Ignore and continue?
 $? YES 29002018 
-$# Property Set "REVESTIMENTO" created.
+$# Property Set "LONGARINAS_NERVURAS" created.
 gm_hilight_clear(  )
 gm_hilight_clear(  )
 gm_hilight_clear(  )
 gm_hilight_clear(  )
 gm_hilight_clear(  )
 gm_hilight_clear(  )
-elementprops_modify( "REVESTIMENTO", "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [  @
-13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406,  @
- 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], [  @
-"m:Al2024", "", "1.5", "", "", "", "", "", "", "", "", "", "", "", "", "",  "" @
-], "Surface 1:14" )
-$# Property Set "REVESTIMENTO" modified.
+elementprops_modify( "LONGARINAS_NERVURAS", "LONGARINAS_NERVURAS", 51, 25, 35, @
+ 1, 1, 20, [ 13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, @
+ 4405, 4406,  4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, @
+ 4, 4], [ "m:Al2024", "", "1.5", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "",  ""], "Surface 1:14" )
+$# Property Set "LONGARINAS_NERVURAS" modified.
 elementprops_modify( "STRINGERS_INFERIORES", "STRINGERS_INFERIORES", 11, 2,   @
 42, 1, 1, 20, [39, 13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, @
   4045, 4037, 4047, 4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061,  @
 4303,  8111, 4403, 4404, 4410, 4411, 8200, 8201, 8202], [11, 5, 2, 2, 2, 4, 4, @
  1, 1,  1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4,  @
-4, 4], [ "Sec1_chapeu", "m:Al7475", "<0. 0. 1.>", "<0. 0. 9.0600004>",   @
-"<0. 0. 9.0600004>", "", "", "", "", "", "", "", "", "", "", "", "", "", "",   @
-"", "", "", "", "", "", "", "", "", "", "", "", "Analysis", "Analysis",   @
+4, 4], [ "Sec1_chapeu", "m:Al7475", "<0. 0. 1.>", "<0. 0. 9.03>",   @
+"<0. 0. 9.03>", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  "",  @
+"", "", "", "", "", "", "", "", "", "", "", "Analysis", "Analysis",   @
 "Analysis"], "Surface 7:10:3.3" )
 $# Property Set "STRINGERS_INFERIORES" modified.
 ga_view_center_set( -312.081970, 28.314896 )
@@ -368,18 +373,18 @@ fem_equiv_all_x_equivtol_ab, fem_equiv_all_x_segment, TRUE )
 $# Realigning database with new node numbers...
 $# Database realignment completed.
 $# Geometric equivalencing completed. 660 nodes deleted.
-elementprops_modify( "REVESTIMENTO", "REVESTIMENTO", 51, 25, 35, 1, 1, 20, [  @
-13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405, 4406,  @
- 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4], [  @
-"m:Al2024", "", "1.572", "", "", "", "", "", "", "", "", "", "", "", "", "",   @
-""], "Surface 1:8 10 12 13" )
-$# Property Set "REVESTIMENTO" modified.
+elementprops_modify( "LONGARINAS_NERVURAS", "LONGARINAS_NERVURAS", 51, 25, 35, @
+ 1, 1, 20, [ 13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, @
+ 4405, 4406,  4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, @
+ 4, 4], [ "m:Al2024", "", "1.5", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "",  ""], "Surface 1:6 8 13" )
+$# Property Set "LONGARINAS_NERVURAS" modified.
 elementprops_create( "COMPOSITO", 51, 25, 35, 1, 3, 20, [13, 20, 4037, 4111,   @
 4265, 1005, 5, 8111, 4213], [5, 9, 1, 1, 1, 1, 1, 4, 4], ["m:Laminado", "", "" @
  , "", "", "", "", "", ""], "Surface 9 11 14" )
 $# Property Set "COMPOSITO" created.
 uil_primary_file.db_save(  )
-$# Reclaimed 1.35 MB of 4.90 MB.
+$# Reclaimed 0.64 MB of 4.96 MB.
 gm_hilight_clear(  )
 gm_hilight_clear(  )
 gm_hilight_clear(  )
@@ -453,447 +458,513 @@ mscnastran_subcase.create_char_param( "PERFORM ERROR ANALYSIS", "ON" )
 mscnastran_subcase.create_char_param( "ROTOR DYNAMICS", "" )
 mscnastran_subcase.create_char_param( "ALL EXPLICIT MPCS", "ON" )
 uil_primary_file.db_save(  )
+$# Reclaimed 1.02 MB of 4.53 MB.
 $
 $# Session file stopped playing (level 1)
-$#  Beginning analysis of  ultimate_desc
-jobfile.open( "ultimate_desc", "ANALYZE NO JOBFILE" )
-msc_delete_old_files( "ultimate_desc", ".bdf", ".h5" )
-jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["18-Dec-21" @
-, "10:11:49"] )
-jobfile.writec( "", "TRANSLATOR = pat3nas" )
-jobfile.writec( "DATABASE", "C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO" // @
-"\carregamento_des\ultimate\ultimate_desc.db" )
-jobfile.writec( "JOBNAME", "ultimate_desc" )
-jobfile.writec( "ANALYSIS TITLE", "MSC.Nastran job created on 18-Dec-21 at" // @
-" 10:11:44" )
-jobfile.writec( "ANALYSIS SUBTITLE", "" )
-jobfile.writec( "ANALYSIS LABEL", "" )
-jobfile.writec( "", "" )
-jobfile.writec( "OBJECT", "Entire Model" )
-jobfile.writec( "METHOD", "Full Run" )
-jobfile.writec( "", "" )
-jobfile.writec( "MODEL SUFFIX", ".bdf" )
-jobfile.writec( "RESULTS SUFFIX", ".h5" )
-jobfile.writec( "", "" )
-jobfile.writec( "", "/*" )
-jobfile.writec( "", " * File Search Path Declaration" )
-jobfile.writec( "", " */" )
-jobfile.writec( "", "" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\shareware\msc\unsupported\utilities\extra_files" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\helpfiles" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\alters" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\icons" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\icons\RibbonIcons" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\bin" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\bin\exe" )
-jobfile.writec( "File Search Path", "C:\Users\User" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\mscprocor_files\dmap" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\mscprocor_files\plb" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\mscprocor_files\lib" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\mscprocor_files\icons" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\shareware\msc\unsupported\utilities\icons" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\shareware\msc\unsupported\utilities\plb" )
-jobfile.writec( "File Search Path", "C:\Program Files\MSC.Software\NaPa_SE" // @
-"\20211\Patran\mscexplore_files\" )
-jobfile.writec( "", "" )
-jobfile.writec( "", "/*" )
-jobfile.writec( "", " * Translation Parameters" )
-jobfile.writec( "", " */" )
-jobfile.writec( "", "" )
-jobfile.writec( "DATA OUTPUT", "HDF5+PRINT" )
-jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
-jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
-jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
-jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
-jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
-jobfile.writec( "GEOM CHECK", "INFORM" )
-jobfile.writec( "SORTED BULK", "NO" )
-jobfile.writec( "CARD FORMAT", "either" )
-jobfile.writec( "NODE COORDINATES", "reference frame" )
-jobfile.writec( "COORD COORDINATES", "global" )
-jobfile.writec( "MSC.Nastran VERSION", "2021." )
-jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
-jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
-jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
-jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
-jobfile.writec( "PCOMPG ENTRY", "TRUE" )
-jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
-jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
-jobfile.writei( "SUPER ELEMENT 0", 0 )
-jobfile.writec( "SEALL WRITE", "FALSE" )
-jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
-jobfile.writec( "AUTOQSET", "FALSE" )
-jobfile.writec( "FIXEDB", "FALSE" )
-jobfile.writei( "SUPER TREE COUNT", 0 )
-jobfile.writec( "MODEL TOLERANCE", "0.40000001" )
-jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
-jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
-jobfile.writec( "TABLE OFFSET", "0" )
-jobfile.writec( "LOAD SET OFFSET", "0" )
-jobfile.writec( "LOAD CASE OFFSET", "0" )
-jobfile.writec( "CONTROL SET OFFSET", "0" )
-jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
-jobfile.writec( "SCALAR POINT OFFSET", "0" )
-jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
-jobfile.writec( "NUMBER ONLY", "ON" )
-jobfile.writec( "BEGINNING NUMBER", "OFF" )
-jobfile.writec( "TRAILING NUMBER", "OFF" )
-jobfile.writec( "SYNTAX NUMBER", "ON" )
-jobfile.writec( "SYNTAX MARKER", "." )
-jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
-jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
-jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
-jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
-jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
-jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
-jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
-jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
-jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
-jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
-jobfile.writec( "", "" )
-jobfile.writec( "", "/*" )
-jobfile.writec( "", " * Solution Parameters" )
-jobfile.writec( "", " */" )
-jobfile.writec( "", "" )
-jobfile.writec( "SOLUTION TYPE", "LINEAR STATIC" )
-jobfile.writei( "SOLUTION SEQUENCE", 101 )
-jobfile.writec( "DATABASE RUN", "ON" )
-jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
-jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
-jobfile.writec( "INERTIA RELIEF", "OFF" )
-jobfile.writec( "ALTERNATE REDUCTION", "OFF" )
-jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
-jobfile.writec( "MASS CALCULATION", "Lumped" )
-jobfile.writec( "DATA DECK ECHO", "None" )
-jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
-jobfile.writec( "MAXIMUM PRINTED LINES", "" )
-jobfile.writec( "MAXIMUM RUN TIME", "" )
-jobfile.writec( "WT-MASS CONVERSION", "1.0" )
-jobfile.writec( "NODE ID FOR WT-GENER", "" )
-jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
-jobfile.writec( "USE SOL600", "OFF" )
-jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 0 )
-jobfile.writei( "CONTACT-DEFORMABLE-DEFORMABLE METHOD", 0 )
-jobfile.writec( "CONTACT CHECK", "OFF" )
-jobfile.writei( "CONTACT-CRITERION", 0 )
-jobfile.writei( "CONTACT-DERIVATION", 0 )
-jobfile.writei( "CONTACT-REL_ABS", 0 )
-jobfile.writec( "USE SOL700", "OFF" )
-jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
-jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
-jobfile.writec( "NEF STRESS UNITS", "MPA" )
-jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
-jobfile.writec( "NEF RESULT LOCATION", "NODA" )
-jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
-jobfile.writec( "NEF LAYER LOCATION", "WORST" )
-jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
-jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
-jobfile.writec( "NEF NUMBER OF THREADS", "1" )
-jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
-jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
-jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
-jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
-jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\User" )
-jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
-jobfile.writec( "NEF EVENT DATA", "0" )
-jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
-jobfile.writec( "USE CONTACT TABLE", "OFF" )
-jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
-jobfile.writei( "MDOF DATA", 0 )
-jobfile.writec( "CELL WRITE", "ON" )
-jobfile.writei( "CELL INPUT 0", 0 )
-jobfile.writec( "FMS WRITE", "ON" )
-jobfile.writei( "FMS INPUT 0", 0 )
-jobfile.writec( "EXEC WRITE", "ON" )
-jobfile.writei( "EXEC INPUT 0", 0 )
-jobfile.writec( "CASE WRITE", "ON" )
-jobfile.writei( "CASE INPUT 0", 0 )
-jobfile.writec( "BULK WRITE", "ON" )
-jobfile.writei( "BULK INPUT 0", 0 )
-jobfile.writec( "CELL DTI POSITION", "START" )
-jobfile.writec( "FMS DTI POSITION", "START" )
-jobfile.writec( "EXEC DTI POSITION", "START" )
-jobfile.writec( "CASE DTI POSITION", "START" )
-jobfile.writec( "BULK DTI POSITION", "START" )
-jobfile.writec( "", "END" )
-jobfile.close(  )
-mscnastran_job.associate_subcases( "101", "ultimate_desc", 1, ["Default"] )
-analysis_submit_2( "MSC.Nastran", "ultimate_desc" )
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11841.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11842.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11843.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11844.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11845.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11846.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11847.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11848.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11849.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11850.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11851.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11852.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11853.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11854.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11855.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11856.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11857.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11858.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11859.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11860.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11861.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11862.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11863.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11864.
-$# Warning reported from application APP INTERFACES
-$#     No properties have been defined for the element with ID 11865.
-$# Question from application APP INTERFACES
-$#     Some elements in the model have no types or properties defined. Do you 
-$# wish to continue with the translation?
-$? YES 6018002 
-$# Patran 2021.1  (Student Edition) has obtained 0 concurrent license(s) from 
-$# FLEXlm per a request to execute on Windows node DESKTOP-HH2QMJP(
-$# 5cc9d3a28abf) (Windows 6.2 (Build 9200: Service Pack 0)) at 18-Dec-21 
-$# 10:11:50.
-$# 
-$# Reading model information from the specified database, 
-$# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_des\ultimate\ult
-$# imate_desc.db.
-$# Messages output from the Patran 2021.1  (Student Edition) input deck 
-$# translator on December  18, 2021 at 10:11:50.
-$# 
-$# The NASTRAN input file, ultimate_desc.bdf, has been successfully opened.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11841.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11842.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11843.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11844.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11845.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11846.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11847.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11848.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11849.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11850.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11851.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11852.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11853.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11854.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11855.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11856.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11857.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11858.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11859.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11860.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11861.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11862.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11863.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11864.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11865.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11866.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11867.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11868.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11869.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11870.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11871.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11872.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11873.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11874.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11875.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11876.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11877.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11878.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11879.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11880.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11881.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11882.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11883.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11884.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11885.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11886.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11887.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11888.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11889.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11890.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11891.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11892.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11893.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11894.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11895.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11896.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11897.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11898.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11899.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11900.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11901.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11902.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11903.
-$# Warning reported from application APP INTERFACES
-$#     No element properties have been assigned to the element with id = 11904.
-$# Warning reported from application APP INTERFACES
-$#     
-$# The elements listed above which have no assigned element property region 
-$# will not be translated due to the fact that the desired element type is 
-$# unspecified.
-$# 
-$# Translating 64 elements from the element property region 
-$# LONGARINAS_SUPERIORES.
-$# 
-$# Translating 64 elements from the element property region 
-$# LONGARINAS_INFERIORES.
-$# 
-$# Translating 192 elements from the element property region 
-$# NERVURAS_SUPERIORES.
-$# 
-$# Translating 192 elements from the element property region 
-$# NERVURAS_INFERIORES.
-$# 
-$# Translating 64 elements from the element property region 
-$# STRINGERS_INFERIORES.
-$# 
-$# Translating 8704 elements from the element property region REVESTIMENTO.
-$# 
-$# Translating 3072 elements from the element property region COMPOSITO.
-$# 
-$# 7 property regions translated.
-$# 
-$# Translating 3 referenced material records.
-$# 
-$# Translating 11778 nodes from the entire model.
-$# 
-$# Writing loads for Load Case : Default.
-$# 
-$# Translating nodal constraints in load set : ENGASTE.
-$# Writing interface element lbcs.
-$# 
-$# Translating nodal forces in load set : F1.
-$# 
-$# Translating nodal forces in load set : F2.
-$# 
-$# Translating nodal forces in load set : F3.
-$# 
-$# Translating nodal forces in load set : F4.
-$# Total execution time in real seconds: 1
-$# Total execution time in CPU seconds: 0.952999
-$# 
-$# End of NASTRAN input file translation.
-$# Student Edition Patran Nastran Preference Patran 2021.1  (Student Edition) 
-$# has released 0 license(s) to FLEXlm at 18-Dec-21 10:11:51.
-$# The translation has completed successfully.
-$# Executing /bin/sh -c C:\Program 
-$# Files\MSC.Software\NaPa_SE\20211\Patran\bin\MscN
-$# astranExecute.exe -j ultimate_desc -m bdf -x 2021 -c 
-$# %%prog=edu%auth=edu%arch=64
-$# % -v
-$# Session file 
-$# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_des\limite\caixa
-$# o_22_32_des_limite.ses.01 started playing (level 1)
-uil_file_new.go( "C:\Program Files\MSC.Software\NaPa_SE\20211\Patran/templ" // @
-"ate.db", "C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_des\" // @
-"limite\limite_desc" )
-$# Question from application FILE
-$#     A database is already open.
-$# Do you want to create a new database 
-$# C:\Users\User\Desktop\SAA205\ENTREGAS\PROJETO\carregamento_des\limite\limit
-$# e_desc.db anyway ?
-$? YES 36000037 
+ga_view_center_set( -127.552979, -26.877655 )
+ga_view_zoom_set( 233.442001 )
+ga_view_center_set( -119.919067, -42.579224 )
+ga_view_zoom_set( 207.503998 )
+ga_view_center_set( -112.053802, -55.456665 )
+ga_view_zoom_set( 184.447998 )
+ga_view_center_set( -104.788239, -66.629089 )
+ga_view_zoom_set( 163.953781 )
+ga_view_center_set( -98.695587, -75.950882 )
+ga_view_zoom_set( 145.736694 )
+ga_view_center_set( -93.713196, -81.529068 )
+ga_view_zoom_set( 129.543732 )
+ga_view_center_set( -90.054688, -81.769783 )
+ga_view_zoom_set( 115.149986 )
+ga_view_center_set( -87.658447, -79.501877 )
+ga_view_zoom_set( 102.355545 )
+ga_view_center_set( -86.441284, -76.420944 )
+ga_view_zoom_set( 90.982704 )
+ga_view_center_set( -87.252686, -79.024323 )
+ga_view_zoom_set( 80.873512 )
+ga_view_center_set( -88.034103, -80.977791 )
+ga_view_zoom_set( 71.887566 )
+ga_view_center_set( -88.728638, -82.500496 )
+ga_view_zoom_set( 63.900059 )
+ga_view_center_set( -89.346069, -83.806526 )
+ga_view_zoom_set( 56.800053 )
+ga_view_center_set( -89.852615, -84.882996 )
+ga_view_zoom_set( 50.488937 )
+ga_view_center_set( -90.663177, -86.470276 )
+ga_view_zoom_set( 40.391151 )
+ga_view_center_set( -91.311615, -87.632034 )
+ga_view_zoom_set( 32.312920 )
+ga_view_center_set( -93.040764, -87.692078 )
+ga_view_zoom_set( 28.722595 )
+ga_view_center_set( -94.577759, -87.745453 )
+ga_view_zoom_set( 25.531197 )
+ga_view_center_set( -95.943977, -87.792892 )
+ga_view_zoom_set( 22.694397 )
+ga_view_center_set( -97.158401, -87.835052 )
+ga_view_zoom_set( 20.172798 )
+ga_view_center_set( -99.101456, -87.902527 )
+ga_view_zoom_set( 16.138239 )
+ga_view_center_set( -98.980026, -87.841812 )
+ga_view_zoom_set( 18.155519 )
+ga_view_center_set( -98.828232, -87.500267 )
+ga_view_zoom_set( 20.424959 )
+ga_view_center_set( -98.640358, -87.013542 )
+ga_view_zoom_set( 22.978079 )
+ga_view_center_set( -98.217712, -85.380486 )
+ga_view_zoom_set( 28.722599 )
+ga_view_center_set( -97.425232, -81.886238 )
+ga_view_zoom_set( 39.493572 )
+ga_view_center_set( -97.061966, -80.251686 )
+ga_view_zoom_set( 44.430267 )
+ga_view_center_set( -96.690475, -78.412811 )
+ga_view_zoom_set( 49.984051 )
+ga_view_center_set( -96.272583, -76.344086 )
+ga_view_zoom_set( 56.232056 )
+ga_view_center_set( -95.332291, -71.689423 )
+ga_view_zoom_set( 70.290070 )
+ga_view_center_set( -94.156891, -65.871117 )
+ga_view_zoom_set( 87.862587 )
+ga_view_center_set( -93.422287, -62.234665 )
+ga_view_zoom_set( 98.845413 )
+ga_view_center_set( -92.595840, -58.143661 )
+ga_view_zoom_set( 111.201088 )
+ga_view_center_set( -90.736237, -48.938896 )
+ga_view_zoom_set( 139.001358 )
+ga_view_center_set( -88.411850, -37.432945 )
+ga_view_zoom_set( 173.751694 )
+ga_view_center_set( -86.958984, -30.241722 )
+ga_view_zoom_set( 195.470657 )
+ga_view_center_set( -87.249588, -49.055153 )
+ga_view_zoom_set( 173.751694 )
+ga_view_center_set( -87.636978, -65.778206 )
+ga_view_zoom_set( 154.445953 )
+ga_view_center_set( -88.555237, -80.528343 )
+ga_view_zoom_set( 137.285294 )
+ga_view_center_set( -89.473572, -92.823296 )
+ga_view_zoom_set( 122.031372 )
+ga_view_center_set( -90.108459, -103.480080 )
+ga_view_zoom_set( 108.472328 )
+ga_view_center_set( -90.672852, -112.952766 )
+ga_view_zoom_set( 96.419846 )
+ga_view_center_set( -91.174515, -121.372932 )
+ga_view_zoom_set( 85.706528 )
+ga_view_center_set( -91.620438, -128.857513 )
+ga_view_zoom_set( 76.183578 )
+ga_view_center_set( -92.809448, -136.869400 )
+ga_view_zoom_set( 67.718735 )
+ga_view_center_set( -93.916702, -144.091736 )
+ga_view_zoom_set( 60.194431 )
+ga_view_center_set( -94.900955, -150.511566 )
+ga_view_zoom_set( 53.506161 )
+ga_view_center_set( -95.775818, -156.218094 )
+ga_view_zoom_set( 47.561031 )
+ga_view_center_set( -96.553497, -161.290573 )
+ga_view_zoom_set( 42.276474 )
+ga_view_center_set( -97.276199, -165.799438 )
+ga_view_zoom_set( 37.579086 )
+ga_view_center_set( -98.058243, -169.695602 )
+ga_view_zoom_set( 33.403633 )
+ga_view_center_set( -98.927177, -172.960266 )
+ga_view_zoom_set( 29.692118 )
+ga_view_center_set( -99.743683, -175.795990 )
+ga_view_zoom_set( 26.392994 )
+ga_view_center_set( -100.351761, -178.375458 )
+ga_view_zoom_set( 23.460440 )
+ga_view_center_set( -100.874840, -180.650879 )
+ga_view_zoom_set( 20.853724 )
+ga_view_center_set( -101.339806, -182.673492 )
+ga_view_zoom_set( 18.536644 )
+ga_view_center_set( -101.753136, -184.457581 )
+ga_view_zoom_set( 16.477016 )
+ga_view_center_set( -102.120514, -186.043442 )
+ga_view_zoom_set( 14.646236 )
+ga_view_center_set( -102.708359, -188.580811 )
+ga_view_zoom_set( 11.716990 )
+ga_view_center_set( -102.987030, -189.699844 )
+ga_view_zoom_set( 10.415102 )
+ga_view_center_set( -103.242477, -190.694504 )
+ga_view_zoom_set( 9.257869 )
+ga_view_center_set( -103.483284, -191.578674 )
+ga_view_zoom_set( 8.229217 )
+ga_view_center_set( -103.758530, -192.321777 )
+ga_view_zoom_set( 7.314859 )
+ga_view_center_set( -104.003174, -192.982330 )
+ga_view_zoom_set( 6.502097 )
+ga_view_center_set( -104.220642, -193.569458 )
+ga_view_zoom_set( 5.779642 )
+ga_view_center_set( -104.413933, -194.091370 )
+ga_view_zoom_set( 5.137460 )
+ga_view_center_set( -104.207741, -193.556595 )
+ga_view_zoom_set( 5.779642 )
+ga_view_center_set( -103.743828, -192.353317 )
+ga_view_zoom_set( 7.224553 )
+ga_view_center_set( -103.453888, -191.601257 )
+ga_view_zoom_set( 8.127622 )
+ga_view_center_set( -103.127678, -190.755203 )
+ga_view_zoom_set( 9.143575 )
+ga_view_center_set( -103.535423, -191.757568 )
+ga_view_zoom_set( 8.127622 )
+ga_view_center_set( -103.897850, -192.648560 )
+ga_view_zoom_set( 7.224553 )
+ga_view_center_set( -104.225380, -193.440536 )
+ga_view_zoom_set( 6.421824 )
+ga_view_center_set( -104.521317, -194.139755 )
+ga_view_zoom_set( 5.708288 )
+ga_view_center_set( -104.784363, -194.757034 )
+ga_view_zoom_set( 5.074034 )
+ga_view_center_set( -105.021942, -195.298203 )
+ga_view_zoom_set( 4.510252 )
+ga_view_center_set( -105.233139, -195.775894 )
+ga_view_zoom_set( 4.009113 )
+ga_view_center_set( -105.423851, -196.197510 )
+ga_view_zoom_set( 3.563656 )
+ga_view_aa_set( -70.558922, -1.364524, 40.343586 )
+ga_view_center_set( -105.331444, -195.957672 )
+ga_view_zoom_set( 4.009113 )
+ga_view_center_set( -105.227478, -195.687820 )
+ga_view_zoom_set( 4.510252 )
+ga_view_center_set( -105.110535, -195.384247 )
+ga_view_zoom_set( 5.074034 )
+ga_view_center_set( -104.978989, -195.042740 )
+ga_view_zoom_set( 5.708288 )
+ga_view_center_set( -104.830978, -194.658508 )
+ga_view_zoom_set( 6.421824 )
+ga_view_center_set( -104.498032, -193.794037 )
+ga_view_zoom_set( 8.027281 )
+ga_view_center_set( -104.289940, -193.253754 )
+ga_view_zoom_set( 9.030691 )
+ga_view_center_set( -103.972786, -192.536453 )
+ga_view_zoom_set( 11.288364 )
+ga_view_center_set( -103.576309, -191.639801 )
+ga_view_zoom_set( 14.110456 )
+ga_view_center_set( -103.080757, -190.519012 )
+ga_view_zoom_set( 17.638069 )
+ga_view_center_set( -102.461319, -189.117981 )
+ga_view_zoom_set( 22.047586 )
+ga_view_center_set( -102.074188, -188.242371 )
+ga_view_zoom_set( 24.803535 )
+ga_view_center_set( -101.493462, -188.107574 )
+ga_view_zoom_set( 27.903976 )
+ga_view_center_set( -100.186882, -187.804276 )
+ga_view_zoom_set( 34.879971 )
+ga_view_center_set( -98.553688, -187.425156 )
+ga_view_zoom_set( 43.599964 )
+ga_view_center_set( -96.512154, -186.951233 )
+ga_view_zoom_set( 54.499954 )
+ga_view_center_set( -95.190620, -186.609482 )
+ga_view_zoom_set( 61.312447 )
+ga_view_center_set( -93.652657, -186.224991 )
+ga_view_zoom_set( 68.976501 )
+ga_view_center_set( -88.462105, -184.927353 )
+ga_view_zoom_set( 94.842690 )
+ga_view_center_set( -86.083031, -184.253342 )
+ga_view_zoom_set( 106.698029 )
+ga_view_aa_set( -81.502983, -0.417417, 44.222710 )
+ga_view_center_set( -81.890129, -188.312469 )
+ga_view_zoom_set( 120.035278 )
+ga_view_center_set( -77.173042, -192.879028 )
+ga_view_zoom_set( 135.039688 )
+ga_view_center_set( -71.866295, -198.016373 )
+ga_view_zoom_set( 151.919647 )
+ga_view_center_set( -65.896217, -203.795959 )
+ga_view_zoom_set( 170.909607 )
+ga_view_center_set( -53.892632, -214.799332 )
+ga_view_zoom_set( 213.637009 )
+ga_view_center_set( -46.569115, -221.140549 )
+ga_view_zoom_set( 240.341629 )
+ga_view_center_set( -38.329887, -228.274429 )
+ga_view_zoom_set( 270.384338 )
+ga_view_center_set( -29.060860, -236.300034 )
+ga_view_zoom_set( 304.182373 )
+ga_view_center_set( -22.193947, -250.415543 )
+ga_view_zoom_set( 342.205170 )
+ga_view_center_set( -6.743172, -282.175476 )
+ga_view_zoom_set( 427.756470 )
+ga_view_center_set( 11.139488, -316.152771 )
+ga_view_zoom_set( 534.695557 )
+ga_view_center_set( 32.598930, -355.941956 )
+ga_view_zoom_set( 668.369446 )
+ga_view_center_set( 46.010765, -380.810181 )
+ga_view_zoom_set( 751.915649 )
+ga_view_aa_set( -120.427277, -2.617602, 43.690273 )
+ga_view_center_set( 34.275414, -322.970337 )
+ga_view_zoom_set( 668.369446 )
+ga_view_center_set( 23.843498, -271.557434 )
+ga_view_zoom_set( 594.106201 )
+ga_view_center_set( 14.571037, -226.298538 )
+ga_view_zoom_set( 528.094421 )
+ga_view_center_set( 5.543907, -187.245758 )
+ga_view_zoom_set( 469.417267 )
+ga_view_center_set( -3.876045, -154.625595 )
+ga_view_zoom_set( 417.259796 )
+ga_view_center_set( -12.869331, -126.870224 )
+ga_view_zoom_set( 370.897583 )
+ga_view_center_set( -27.258629, -83.454147 )
+ga_view_zoom_set( 296.718079 )
+ga_view_center_set( -33.653893, -64.819672 )
+ga_view_zoom_set( 263.749390 )
+ga_view_center_set( -41.690941, -42.179031 )
+ga_view_zoom_set( 234.443909 )
+ga_view_center_set( -54.549950, -10.658447 )
+ga_view_zoom_set( 187.555130 )
+ga_view_center_set( -60.543968, 2.793106 )
+ga_view_zoom_set( 166.715668 )
+ga_view_center_set( -70.803398, 23.200439 )
+ga_view_zoom_set( 133.372528 )
+ga_view_center_set( -75.363182, 32.270340 )
+ga_view_zoom_set( 118.553360 )
+ga_view_center_set( -80.121162, 40.420578 )
+ga_view_zoom_set( 105.380768 )
+ga_view_center_set( -84.507179, 47.821892 )
+ga_view_zoom_set( 93.671791 )
+ga_view_center_set( -88.405800, 54.400810 )
+ga_view_zoom_set( 83.263817 )
+ga_view_center_set( -91.871269, 60.248749 )
+ga_view_zoom_set( 74.012283 )
+ga_view_center_set( -94.951683, 65.446930 )
+ga_view_zoom_set( 65.788696 )
+ga_view_center_set( -97.738716, 70.165314 )
+ga_view_zoom_set( 58.478840 )
+ga_view_center_set( -99.998756, 74.315979 )
+ga_view_zoom_set( 51.981190 )
+ga_view_center_set( -102.007713, 78.005432 )
+ga_view_zoom_set( 46.205502 )
+ga_view_center_set( -103.896492, 81.284943 )
+ga_view_zoom_set( 41.071556 )
+ga_view_center_set( -105.728004, 84.261124 )
+ga_view_zoom_set( 36.508049 )
+ga_view_center_set( -107.437431, 86.988007 )
+ga_view_zoom_set( 32.451599 )
+ga_view_center_set( -108.956894, 89.411926 )
+ga_view_zoom_set( 28.845865 )
+ga_view_center_set( -110.307556, 91.566528 )
+ga_view_zoom_set( 25.640770 )
+ga_view_center_set( -111.184166, 93.653214 )
+ga_view_zoom_set( 22.791796 )
+ga_view_center_set( -111.963371, 95.508072 )
+ga_view_zoom_set( 20.259375 )
+ga_view_center_set( -112.595772, 97.156815 )
+ga_view_zoom_set( 18.008333 )
+ga_view_center_set( -113.414894, 99.818893 )
+ga_view_zoom_set( 14.406667 )
+ga_view_center_set( -113.704018, 101.034164 )
+ga_view_zoom_set( 12.805926 )
+ga_view_center_set( -113.875328, 102.161957 )
+ga_view_zoom_set( 11.383045 )
+ga_view_center_set( -113.934563, 103.189850 )
+ga_view_zoom_set( 10.118262 )
+ga_view_center_set( -113.889420, 104.111053 )
+ga_view_zoom_set( 8.994011 )
+ga_view_center_set( -113.849319, 104.929901 )
+ga_view_zoom_set( 7.994677 )
+ga_view_center_set( -113.813667, 105.657776 )
+ga_view_zoom_set( 7.106379 )
+ga_view_center_set( -113.781967, 106.304771 )
+ga_view_zoom_set( 6.316782 )
+ga_view_center_set( -113.731270, 107.339951 )
+ga_view_zoom_set( 5.053425 )
+ga_view_center_set( -113.708763, 107.800018 )
+ga_view_zoom_set( 4.491934 )
+ga_view_center_set( -113.547295, 107.644135 )
+ga_view_zoom_set( 5.053426 )
+ga_view_center_set( -113.365631, 107.473000 )
+ga_view_zoom_set( 5.685104 )
+ga_view_center_set( -112.956856, 107.087952 )
+ga_view_zoom_set( 7.106380 )
+ga_view_center_set( -112.190353, 106.401680 )
+ga_view_zoom_set( 9.771273 )
+ga_view_center_set( -111.839066, 106.095284 )
+ga_view_zoom_set( 10.992682 )
+ga_view_center_set( -111.554138, 106.017151 )
+ga_view_zoom_set( 12.366767 )
+ga_view_center_set( -111.254280, 105.918915 )
+ga_view_zoom_set( 13.912613 )
+ga_view_center_set( -110.242249, 105.587387 )
+ga_view_zoom_set( 19.129843 )
+ga_view_center_set( -109.314560, 105.283470 )
+ga_view_zoom_set( 23.912304 )
+ga_view_center_set( -108.734756, 105.073532 )
+ga_view_zoom_set( 26.901342 )
+ga_view_center_set( -107.430206, 104.601181 )
+ga_view_zoom_set( 33.626678 )
+ga_view_center_set( -104.168732, 103.420311 )
+ga_view_zoom_set( 50.440018 )
+ga_view_center_set( -102.945694, 102.977470 )
+ga_view_zoom_set( 56.745018 )
+ga_view_center_set( -101.949326, 103.523087 )
+ga_view_zoom_set( 63.838146 )
+ga_view_center_set( -100.828415, 104.136902 )
+ga_view_zoom_set( 71.817917 )
+ga_view_center_set( -99.567398, 104.827438 )
+ga_view_zoom_set( 80.795158 )
+ga_view_center_set( -93.892822, 107.934937 )
+ga_view_zoom_set( 121.192734 )
+ga_view_center_set( -93.082230, 109.100235 )
+ga_view_zoom_set( 136.341827 )
+ga_view_center_set( -91.258347, 111.722153 )
+ga_view_zoom_set( 170.427277 )
+ga_view_center_set( -86.698425, 118.277054 )
+ga_view_zoom_set( 255.640915 )
+ga_view_center_set( -84.988602, 120.735123 )
+ga_view_zoom_set( 287.596039 )
+ga_view_center_set( -83.786209, 121.576721 )
+ga_view_zoom_set( 323.545532 )
+ga_view_aa_set( -90.629372, -11.050101, 76.593155 )
+ga_view_aa_set( -68.870872, -0.828401, 28.501396 )
+ga_view_aa_set( -68.794159, -0.288385, 140.684128 )
+ga_view_center_set( -75.369949, 88.272293 )
+ga_view_zoom_set( 287.596039 )
+ga_view_center_set( -67.675034, 58.882095 )
+ga_view_zoom_set( 255.640930 )
+ga_view_center_set( -60.455322, 33.137466 )
+ga_view_zoom_set( 227.236389 )
+ga_view_center_set( -54.037506, 10.253342 )
+ga_view_zoom_set( 201.987900 )
+ga_view_center_set( -48.182785, -9.787872 )
+ga_view_zoom_set( 179.544800 )
+ga_view_center_set( -73.156235, 1.543663 )
+ga_view_zoom_set( 201.987900 )
+ga_view_center_set( -101.251389, 14.291626 )
+ga_view_zoom_set( 227.236389 )
+ga_view_center_set( -132.858444, 28.633110 )
+ga_view_zoom_set( 255.640930 )
+ga_view_center_set( -99.162827, 5.798058 )
+ga_view_zoom_set( 227.236389 )
+ga_view_center_set( -69.334885, -15.242378 )
+ga_view_zoom_set( 201.987900 )
+ga_view_center_set( -92.108078, 7.778252 )
+ga_view_zoom_set( 227.236389 )
+ga_view_center_set( -62.403900, -16.108833 )
+ga_view_zoom_set( 201.987900 )
+ga_view_center_set( -81.464142, 1.218483 )
+ga_view_zoom_set( 227.236389 )
+sys_poll_option( 2 )
+pref_fa_set( [FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, TRUE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE], [6, 3, 1, 1, 5, 7, 2, 2, 8, 11, 2, 3, 3, 5, 2, 1, @
+ 3, 6, 5, 5, 3, 2, 2, 2, 2, 2, 6, 6, 6, 9, 9, 3, 5, 5, 5, 1, 3, 3, 15, 13], [ @
+TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, @
+ TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, @
+ TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, @
+ TRUE], [3, 4, 5, 6, 1, 1, 7, 8, 9, 10], [TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE], FALSE )
+display_fa_vectors( TRUE )
+result_label_format_set( 1, 4 )
+sys_poll_option( 0 )
+ga_view_center_set( -53.864090, 12.233742 )
+ga_view_zoom_set( 201.987900 )
+ga_view_center_set( -85.796082, 24.486679 )
+ga_view_zoom_set( 227.236389 )
+ga_view_center_set( -55.844406, 0.475815 )
+ga_view_zoom_set( 201.987900 )
+ga_view_center_set( -82.825668, 23.372681 )
+ga_view_zoom_set( 227.236389 )
+ga_view_center_set( -112.761810, 48.435455 )
+ga_view_zoom_set( 255.640930 )
+ga_view_center_set( -146.439911, 76.631104 )
+ga_view_zoom_set( 287.596039 )
+ga_view_center_set( -113.545013, 45.145874 )
+ga_view_zoom_set( 255.640930 )
+ga_view_center_set( -83.748184, 17.159012 )
+ga_view_zoom_set( 227.236389 )
+ga_view_center_set( -57.385757, -6.728073 )
+ga_view_zoom_set( 201.987900 )
+ga_view_aa_set( -67.284943, -1.768850, -37.799419 )
+ga_view_center_set( -85.604660, 1.192947 )
+ga_view_zoom_set( 252.484879 )
+ga_view_center_set( -114.535248, -0.663628 )
+ga_view_zoom_set( 284.045502 )
+ga_view_center_set( -69.514801, 15.580757 )
+ga_view_zoom_set( 252.484894 )
+ga_view_center_set( -38.985489, 15.305641 )
+ga_view_zoom_set( 224.431015 )
+ga_view_center_set( -8.058929, 17.505875 )
+ga_view_zoom_set( 199.494232 )
+ga_view_center_set( -30.795364, 37.430771 )
+ga_view_zoom_set( 224.431015 )
+ga_view_center_set( -8.181183, 14.449738 )
+ga_view_zoom_set( 199.494232 )
+ga_view_center_set( -30.673203, 37.552856 )
+ga_view_zoom_set( 224.431015 )
+ga_view_center_set( -7.936768, 13.349426 )
+ga_view_zoom_set( 199.494232 )
+ga_view_center_set( -31.284500, 38.163864 )
+ga_view_zoom_set( 224.431015 )
+ga_view_center_set( -6.470001, 13.715942 )
+ga_view_zoom_set( 199.494232 )
+ga_view_center_set( -55.365570, 27.284386 )
+ga_view_zoom_set( 224.431015 )
+ga_view_center_set( -14.782135, 5.036736 )
+ga_view_zoom_set( 199.494232 )
+ga_view_center_set( -52.309479, 24.228188 )
+ga_view_zoom_set( 224.431015 )
+ga_view_center_set( -9.647980, 3.202980 )
+ga_view_zoom_set( 199.494232 )
+ga_view_center_set( -5.002892, -12.076988 )
+ga_view_zoom_set( 224.431015 )
+ga_view_center_set( -11.481583, 4.425270 )
+ga_view_zoom_set( 199.494232 )
+ga_view_center_set( -8.547836, -8.505028 )
+ga_view_zoom_set( 177.328201 )
+ga_view_center_set( -7.099075, -20.384941 )
+ga_view_zoom_set( 157.625061 )
+ga_view_center_set( -6.841415, -30.859039 )
+ga_view_zoom_set( 140.111160 )
+ga_view_center_set( -6.841415, -40.550949 )
+ga_view_zoom_set( 124.543251 )
+ga_view_center_set( -6.963501, -56.424187 )
+ga_view_zoom_set( 99.634598 )
+ga_view_center_set( -7.061172, -69.220467 )
+ga_view_zoom_set( 79.707680 )
+ga_view_center_set( -8.077057, -81.645569 )
+ga_view_zoom_set( 63.766144 )
+ga_view_center_set( -8.889755, -91.648201 )
+ga_view_zoom_set( 51.012917 )
+ga_view_center_set( -9.250931, -96.093857 )
+ga_view_zoom_set( 45.344814 )
+ga_view_center_set( -9.522614, -99.946762 )
+ga_view_zoom_set( 40.306503 )
+ga_view_center_set( -9.720169, -103.042282 )
+ga_view_zoom_set( 35.828003 )
+ga_view_center_set( -9.895775, -105.481636 )
+ga_view_zoom_set( 31.847115 )
+ga_view_center_set( -9.661575, -103.179062 )
+ga_view_zoom_set( 35.828003 )
+ga_view_center_set( -9.398102, -100.588654 )
+ga_view_zoom_set( 40.306503 )
+ga_view_center_set( -9.101685, -97.674423 )
+ga_view_zoom_set( 45.344818 )
+ga_view_center_set( -8.768280, -94.395905 )
+ga_view_zoom_set( 51.012920 )
+ga_view_center_set( -8.393158, -90.707573 )
+ga_view_zoom_set( 57.389534 )
+ga_view_center_set( -7.549210, -82.408684 )
+ga_view_zoom_set( 71.736916 )
+ga_view_center_set( -7.021698, -77.221916 )
+ga_view_zoom_set( 80.704033 )
+ga_view_center_set( -6.428268, -71.386772 )
+ga_view_zoom_set( 90.792038 )
+ga_view_center_set( -5.760681, -64.933479 )
+ga_view_zoom_set( 102.141045 )
+ga_view_center_set( -5.134796, -57.798714 )
+ga_view_zoom_set( 114.908676 )
+ga_view_center_set( -3.233688, -33.718651 )
+ga_view_zoom_set( 157.999435 )
+ga_view_center_set( -1.103760, -11.838890 )
+ga_view_zoom_set( 197.499298 )
+ga_view_center_set( 0.227356, 1.714912 )
+ga_view_zoom_set( 222.186707 )
+ga_view_center_set( 9.485130, -7.815208 )
+ga_view_zoom_set( 249.960052 )
+ga_view_center_set( -14.203896, 11.381020 )
+ga_view_zoom_set( 222.186707 )
+ga_view_center_set( -50.387856, 14.527405 )
+ga_view_zoom_set( 197.499298 )
 $# Flushing the User Data Manager
-$# Journal file stopped recording at 18-Dec-21 10:12:01
+$# Journal file stopped recording at 18-Dec-21 21:29:27
